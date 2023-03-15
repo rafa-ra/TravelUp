@@ -1,0 +1,29 @@
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin: 0;
+  padding: 0 15px;
+  border-bottom: solid 2px #ededed;
+}
+
+.logoDiv {
+  display: flex;
+  font-family: "Poppins";
+  color: #5e208e;
+}
+
+.logo {
+  filter: invert(14%) sepia(89%) saturate(7479%) hue-rotate(335deg)
+    brightness(104%) contrast(103%);
+}
+
+.logo-text {
+  white-space: pre;
+  margin: 0;
+}
+
+.menu {
+}

@@ -1,0 +1,85 @@
+.menu-container {
+  width: 215px;
+  height: 100vh;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.menu-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.bckg-div {
+  height: 24px;
+  border: solid 2px #bbbbbb;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  right: -12px;
+}
+
+.menu-icon {
+  border-radius: 100%;
+  cursor: pointer;
+  filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(91%)
+    contrast(86%);
+}
+
+.menu-item {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 400 14px/17px "Open Sans";
+  cursor: pointer;
+  color: #393939;
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+
+  img {
+    height: 22px;
+    padding-left: 20px;
+    filter: invert(66%) sepia(7%) saturate(2%) hue-rotate(88deg) brightness(89%)
+      contrast(85%);
+  }
+
+  p {
+    padding-left: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .item-content {
+    display: flex;
+  }
+}
+
+.active {
+  background-color: #f8f8f8;
+  color: #ff0059;
+
+  img {
+    filter: invert(24%) sepia(94%) saturate(7394%) hue-rotate(332deg)
+      brightness(97%) contrast(108%);
+  }
+}
+
+.active-item-bar {
+  white-space: pre;
+  width: 4px;
+  height: 45px;
+  background-color: #ff0059;
+  justify-self: flex-end;
+}
+
+//-----------Closed
+
+.closed {
+  width: 56px;
+}
