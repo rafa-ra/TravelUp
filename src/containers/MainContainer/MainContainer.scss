@@ -1,0 +1,24 @@
+.main-container {
+  height: 100%;
+  flex-grow: 2;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  .content-container {
+    height: 95%;
+    background-color: white;
+    flex-grow: 2;
+    margin-left: 15px;
+    border-radius: 2%;
+  }
+
+  .info-container {
+    height: 95%;
+    width: 300px;
+    background-color: white;
+    margin-left: auto;
+    border-radius: 2%;
+  }
+}
