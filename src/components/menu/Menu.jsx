@@ -38,7 +38,7 @@ export const Menu = () => {
             >
               <div className="item-content">
                 <img src={icon} className="item-icon"></img>
-                <p>{item.label[0]}</p>
+                <p>{item.language.usEN}</p>
               </div>
               {index === activeItem && <div className="active-item-bar"> </div>}
             </div>

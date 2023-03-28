@@ -2,23 +2,54 @@ export const textContent = {
   pages: {},
   containers: {},
   components: {
-    //alterar array para pt-br us-en es-es
     menu: [
       {
         icon: "../../assets/icons/Alerta.svg",
-        label: ["label english", "label português", "label español"],
+        language: {
+          usEN: "Home",
+          ptBR: "Página Principal",
+          esES: "Página Principal",
+        },
       },
       {
-        icon: "Ajuda",
-        label: ["label english", "label português", "label español"],
+        icon: "../../assets/icons/Alerta.svg",
+        language: {
+          usEN: "Where r we going?",
+          ptBR: "Para onde vamos?",
+          esES: "Adónde nos vamos?",
+        },
       },
       {
-        icon: "Ajuda",
-        label: ["label english", "label português", "label español"],
+        icon: "../../assets/icons/Alerta.svg",
+        language: {
+          usEN: "What kind of trip?",
+          ptBR: "O que vamos fazer?",
+          esES: "Qué buscamos?",
+        },
       },
       {
-        icon: "Ajuda",
-        label: ["label english", "label português", "label español"],
+        icon: "../../assets/icons/Alerta.svg",
+        language: {
+          usEN: "Be safe!",
+          ptBR: "Segurança é tudo!",
+          esES: "Estea seguro!",
+        },
+      },
+      {
+        icon: "../../assets/icons/Alerta.svg",
+        language: {
+          usEN: "Your applications",
+          ptBR: "Suas aplicações",
+          esES: "Tus aplicaciones",
+        },
+      },
+      {
+        icon: "../../assets/icons/Alerta.svg",
+        language: {
+          usEN: "Support",
+          ptBR: "Suporte",
+          esES: "Suporte",
+        },
       },
     ],
   },
