@@ -48,7 +48,7 @@ export const textContent = {
         language: {
           usEN: "Support",
           ptBR: "Suporte",
-          esES: "Suporte",
+          esES: "Soporte",
         },
       },
     ],

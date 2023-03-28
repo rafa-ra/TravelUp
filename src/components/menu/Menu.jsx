@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./Menu.scss";
+import LanguageContext from "../../context/LanguageContext";
 import { textContent } from "../../assets/data";
 import icon from "../../assets/icons/Alerta.svg";
 import menuImg from "../../assets/icons/Menu.svg";
 
 export const Menu = () => {
-  const [closedMenu, setClosedMenu] = useState(true);
+  const [closedMenu, setClosedMenu] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
+  const { language } = useContext(LanguageContext);
 
   const closedMenuClass = closedMenu ? "closed" : "";
 
@@ -38,7 +40,7 @@ export const Menu = () => {
             >
               <div className="item-content">
                 <img src={icon} className="item-icon"></img>
-                <p>{item.language.usEN}</p>
+                <p>{item.language[language]}</p>
               </div>
               {index === activeItem && <div className="active-item-bar"> </div>}
             </div>
