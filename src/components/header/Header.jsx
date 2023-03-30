@@ -1,13 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import styles from "./Header.scss";
 import LanguageContext from "../../context/LanguageContext";
 import logo from "../../assets/icons/Cloud.svg";
-import account from "../../assets/icons/Makers.svg";
+import brazil from "../../assets/icons/brazil.png";
+import spain from "../../assets/icons/spain.png";
+import usa from "../../assets/icons/usa.png";
 
 export const Header = () => {
   const { language, changeLanguage } = useContext(LanguageContext);
 
-  const [inputText, setInputText] = useState("");
+  const handleClick = (newLang) => changeLanguage(newLang);
 
   return (
     <header>
@@ -16,11 +18,22 @@ export const Header = () => {
         <img src={logo} className="logo" />
         <h3 className="logo-text"> REIS</h3>
       </div>
-      <div className="menu">
-        <button onClick={() => changeLanguage(language + 1)}>
-          Change Language
-        </button>
-        <h3>{language}</h3>
+      <div className="languages">
+        <img
+          onClick={() => handleClick("ptBR")}
+          className="flag"
+          src={brazil}
+        ></img>
+        <img
+          onClick={() => handleClick("esES")}
+          className="flag"
+          src={spain}
+        ></img>
+        <img
+          onClick={() => handleClick("usEN")}
+          className="flag"
+          src={usa}
+        ></img>
       </div>
     </header>
   );

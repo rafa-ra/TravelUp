@@ -25,6 +25,17 @@ header {
   margin: 0;
 }
 
-.menu {
+.languages {
+  width: 150px;
   display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+
+  .flag {
+    width: 35px;
+  }
+
+  .flag:hover {
+    cursor: pointer;
+  }
 }

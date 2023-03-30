@@ -2,56 +2,81 @@ export const textContent = {
   pages: {},
   containers: {},
   components: {
-    menu: [
-      {
-        icon: "../../assets/icons/Alerta.svg",
+    menu: {
+      title: {
         language: {
-          usEN: "Home",
-          ptBR: "Página Principal",
-          esES: "Página Principal",
+          usEN: "ABOUT",
+          ptBR: "SOBRE",
+          esES: "SOBRE",
         },
       },
-      {
-        icon: "../../assets/icons/Alerta.svg",
-        language: {
-          usEN: "Where r we going?",
-          ptBR: "Para onde vamos?",
-          esES: "Adónde nos vamos?",
+
+      items: [
+        {
+          aboutItem: false,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "Where r we going?",
+            ptBR: "Para onde vamos?",
+            esES: "Adónde nos vamos?",
+          },
         },
-      },
-      {
-        icon: "../../assets/icons/Alerta.svg",
-        language: {
-          usEN: "What kind of trip?",
-          ptBR: "O que vamos fazer?",
-          esES: "Qué buscamos?",
+        {
+          aboutItem: false,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "What kind of trip?",
+            ptBR: "O que vamos fazer?",
+            esES: "Qué buscamos?",
+          },
         },
-      },
-      {
-        icon: "../../assets/icons/Alerta.svg",
-        language: {
-          usEN: "Be safe!",
-          ptBR: "Segurança é tudo!",
-          esES: "Estea seguro!",
+        {
+          aboutItem: false,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "Be safe!",
+            ptBR: "Segurança é tudo!",
+            esES: "Estea seguro!",
+          },
         },
-      },
-      {
-        icon: "../../assets/icons/Alerta.svg",
-        language: {
-          usEN: "Your applications",
-          ptBR: "Suas aplicações",
-          esES: "Tus aplicaciones",
+        {
+          aboutItem: false,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "Your applications",
+            ptBR: "Suas aplicações",
+            esES: "Tus aplicaciones",
+          },
         },
-      },
-      {
-        icon: "../../assets/icons/Alerta.svg",
-        language: {
-          usEN: "Support",
-          ptBR: "Suporte",
-          esES: "Suporte",
+        {
+          aboutItem: false,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "Support",
+            ptBR: "Suporte",
+            esES: "Soporte",
+          },
         },
-      },
-    ],
+        {
+          aboutItem: true,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "THIS PROJECT",
+            ptBR: "ESTE PROJETO",
+            esES: "ESTE PROYECTO",
+          },
+        },
+        {
+          aboutItem: true,
+          icon: "../../assets/icons/Alerta.svg",
+          language: {
+            usEN: "THE DEVELOPER",
+            ptBR: "O DESENVOLVEDOR",
+            esES: "EL DESAROLLADOR",
+          },
+        },
+      ],
+    },
   },
 };
 
