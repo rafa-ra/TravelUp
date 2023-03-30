@@ -21,6 +21,20 @@
   right: -12px;
 }
 
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.submenu-title {
+  font: 10px/16px "Open Sans";
+  letter-spacing: 0.05em;
+  color: #959595;
+  padding-left: 17px;
+}
+
 .menu-icon {
   border-radius: 100%;
   cursor: pointer;
@@ -76,6 +90,14 @@
   height: 45px;
   background-color: #ff0059;
   justify-self: flex-end;
+}
+
+.about {
+  padding-bottom: 40px;
+
+  p {
+    color: #959595;
+  }
 }
 
 //-----------Closed
