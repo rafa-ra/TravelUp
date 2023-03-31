@@ -1,3 +1,5 @@
+import { icons } from "../assets/icons/Menu";
+
 export const textContent = {
   pages: {},
   containers: {},
@@ -14,7 +16,7 @@ export const textContent = {
       items: [
         {
           aboutItem: false,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.country,
           language: {
             usEN: "Where r we going?",
             ptBR: "Para onde vamos?",
@@ -23,7 +25,7 @@ export const textContent = {
         },
         {
           aboutItem: false,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.trip,
           language: {
             usEN: "What kind of trip?",
             ptBR: "O que vamos fazer?",
@@ -32,7 +34,7 @@ export const textContent = {
         },
         {
           aboutItem: false,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.insurance,
           language: {
             usEN: "Be safe!",
             ptBR: "Segurança é tudo!",
@@ -41,7 +43,7 @@ export const textContent = {
         },
         {
           aboutItem: false,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.applications,
           language: {
             usEN: "Your applications",
             ptBR: "Suas aplicações",
@@ -50,7 +52,7 @@ export const textContent = {
         },
         {
           aboutItem: false,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.support,
           language: {
             usEN: "Support",
             ptBR: "Suporte",
@@ -59,7 +61,7 @@ export const textContent = {
         },
         {
           aboutItem: true,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.project,
           language: {
             usEN: "THIS PROJECT",
             ptBR: "ESTE PROJETO",
@@ -68,7 +70,7 @@ export const textContent = {
         },
         {
           aboutItem: true,
-          icon: "../../assets/icons/Alerta.svg",
+          icon: icons.developer,
           language: {
             usEN: "THE DEVELOPER",
             ptBR: "O DESENVOLVEDOR",
@@ -80,10 +82,12 @@ export const textContent = {
   },
 };
 
-export const people = [
-  { name: "Rafael", age: 31 },
-  { name: "Matheus", age: 13 },
-  { name: "Philipe", age: 62 },
+export const countries = [
+  { country: "country" },
+  { country: "country" },
+  { country: "country" },
+  { country: "country" },
+  { country: "country" },
 ];
 
 export const shortStringOptions = [

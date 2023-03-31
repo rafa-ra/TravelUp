@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./MainContainer.scss";
 
-export const ContentContainer = () => {
+const ContentContainer = ({ children }) => {
   return (
     <div className="content-container" styles={styles}>
-      Content
+      {children}
     </div>
   );
 };
+
+export default ContentContainer;

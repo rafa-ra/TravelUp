@@ -41,7 +41,7 @@ export const Menu = () => {
                       }`}
                     >
                       <div className="item-content">
-                        <img src={icon} className="item-icon"></img>
+                        <img src={item.icon} className="item-icon"></img>
                         <p>{item.language[language]}</p>
                       </div>
                       {index === activeItem && (
@@ -65,7 +65,7 @@ export const Menu = () => {
                       }`}
                     >
                       <div className="item-content">
-                        <img src={icon} className="item-icon"></img>
+                        <img src={item.icon} className="item-icon"></img>
                         <p>{item.language[language]}</p>
                       </div>
                       {index === activeItem && (
@@ -91,7 +91,7 @@ export const Menu = () => {
                       }`}
                     >
                       <div className="item-content">
-                        <img src={icon} className="item-icon"></img>
+                        <img src={item.icon} className="item-icon"></img>
                       </div>
                       {index === activeItem && (
                         <div className="active-item-bar"> </div>
@@ -111,7 +111,7 @@ export const Menu = () => {
                       }`}
                     >
                       <div className="item-content">
-                        <img src={icon} className="item-icon"></img>
+                        <img src={item.icon} className="item-icon"></img>
                       </div>
                       {index === activeItem && (
                         <div className="active-item-bar"> </div>

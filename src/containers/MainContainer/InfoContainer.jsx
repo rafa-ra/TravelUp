@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./MainContainer.scss";
 
-export const InfoContainer = () => {
+const InfoContainer = () => {
   return (
     <div className="info-container" styles={styles}>
       Info
     </div>
   );
 };
+
+export default InfoContainer;
