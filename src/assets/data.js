@@ -1,4 +1,5 @@
 import { icons } from "../assets/icons/Menu";
+import { countryFlags, countryPics } from "../assets/countries";
 
 export const textContent = {
   pages: {},
@@ -83,19 +84,41 @@ export const textContent = {
 };
 
 export const countries = [
-  { country: "country" },
-  { country: "country" },
-  { country: "country" },
-  { country: "country" },
-  { country: "country" },
-];
-
-export const shortStringOptions = [
-  "Mouse",
-  "Keyboard",
-  "Monitor",
-  "Laptop",
-  "Desktop",
+  {
+    country: "Australia",
+    flag: countryFlags.australia,
+    picture: countryPics.picaustralia,
+    backgroundColor: "#012169",
+    fontColor: "white",
+  },
+  {
+    country: "Canada",
+    flag: countryFlags.canada,
+    picture: countryPics.piccanada,
+    backgroundColor: "#012169",
+    fontColor: "white",
+  },
+  {
+    country: "Ireland",
+    flag: countryFlags.ireland,
+    picture: countryPics.picireland,
+    backgroundColor: "#012169",
+    fontColor: "white",
+  },
+  {
+    country: "South Africa",
+    flag: countryFlags.southafrica,
+    picture: countryPics.picsouthafrica,
+    backgroundColor: "#012169",
+    fontColor: "white",
+  },
+  {
+    country: "USA",
+    flag: countryFlags.usa,
+    picture: countryPics.picusa,
+    backgroundColor: "#012169",
+    fontColor: "white",
+  },
 ];
 
 export const accordionOptions = [

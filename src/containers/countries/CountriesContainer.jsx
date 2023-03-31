@@ -6,8 +6,8 @@ import styles from "./CountriesContainer.scss";
 const CountriesContainer = () => {
   return (
     <div className="countries-container" styles={styles}>
-      {countries.map((e) => (
-        <CountryBanner countryInfo={e} />
+      {countries.map((e, index) => (
+        <CountryBanner countryInfo={e} count={index} />
       ))}
     </div>
   );
