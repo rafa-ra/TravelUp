@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import styles from "./Menu.scss";
 import LanguageContext from "../../context/LanguageContext";
-import { textContent } from "../../assets/data";
+import { menuContent } from "../../assets/data";
 import icon from "../../assets/icons/Alerta.svg";
 import menuImg from "../../assets/icons/Menu.svg";
 
@@ -31,7 +31,7 @@ export const Menu = () => {
         <>
           <div className="menu-content">
             <div>
-              {textContent.components.menu.items.map(
+              {menuContent.items.map(
                 (item, index) =>
                   !item.aboutItem && (
                     <div
@@ -53,9 +53,9 @@ export const Menu = () => {
             </div>
             <div className="about">
               <h5 className="submenu-title">
-                {textContent.components.menu.title.language[language]}
+                {menuContent.title.language[language]}
               </h5>
-              {textContent.components.menu.items.map(
+              {menuContent.items.map(
                 (item, index) =>
                   item.aboutItem && (
                     <div
@@ -81,7 +81,7 @@ export const Menu = () => {
         <>
           <div className="menu-content">
             <div>
-              {textContent.components.menu.items.map(
+              {menuContent.items.map(
                 (item, index) =>
                   !item.aboutItem && (
                     <div
@@ -101,7 +101,7 @@ export const Menu = () => {
               )}
             </div>
             <div className="about">
-              {textContent.components.menu.items.map(
+              {menuContent.items.map(
                 (item, index) =>
                   item.aboutItem && (
                     <div
