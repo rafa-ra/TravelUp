@@ -1,5 +1,5 @@
 .menu-container {
-  width: 215px;
+  min-width: 215px;
   height: calc(100% - 80px);
   padding: 40px 0;
   background-color: white;
@@ -103,5 +103,5 @@
 //-----------Closed
 
 .closed {
-  width: 56px;
+  min-width: 56px;
 }
