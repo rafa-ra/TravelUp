@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styles from "./CountryBanner.scss";
+import LanguageContext from "../../context/LanguageContext";
 
 const CountryBanner = ({ countryInfo, count }) => {
+  const { language } = useContext(LanguageContext);
+
+  console.log(countryInfo.country, language);
   return (
     <>
       {count % 2 === 0 ? (
@@ -15,7 +19,7 @@ const CountryBanner = ({ countryInfo, count }) => {
             className={`flip-banner ${countryInfo.classname}`}
             styles={styles}
           >
-            <h4>{countryInfo.country}</h4>
+            <h4>{countryInfo.country[language]}</h4>
           </div>
           <img
             src={countryInfo.picture}
@@ -29,7 +33,7 @@ const CountryBanner = ({ countryInfo, count }) => {
             className={`flip-banner ${countryInfo.classname}`}
             styles={styles}
           >
-            <h4>{countryInfo.country}</h4>
+            <h4>{countryInfo.country[language]}</h4>
           </div>
           <img
             src={countryInfo.flag}
