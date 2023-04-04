@@ -1,0 +1,49 @@
+.country-details-container {
+  height: 100%;
+  position: relative;
+}
+
+.container-header {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-summary {
+  position: relative;
+}
+
+.country-title {
+  background-color: gray;
+  width: 400px;
+  border-radius: 2px 15px 2px 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.australia {
+}
+
+.canada {
+}
+
+.ireland {
+}
+
+.south-africa {
+}
+
+.usa {
+}
+
+.card-container {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-footer {
+  position: absolute;
+  bottom: 0;
+}

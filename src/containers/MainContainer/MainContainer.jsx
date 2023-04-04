@@ -1,5 +1,5 @@
 import React from "react";
-import CountriesContainer from "../countries/CountriesContainer";
+import CountryDetailsCOntainer from "../countries/CountryDetailsContainer";
 import ContentContainer from "./ContentContainer";
 import InfoContainer from "./InfoContainer";
 import styles from "./MainContainer.scss";
@@ -8,7 +8,7 @@ export const MainContainer = () => {
   return (
     <div className="main-container" styles={styles}>
       <ContentContainer>
-        <CountriesContainer />
+        <CountryDetailsCOntainer />
       </ContentContainer>
       <InfoContainer />
     </div>
