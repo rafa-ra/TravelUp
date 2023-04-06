@@ -19,6 +19,7 @@ export const menuContent = {
         ptBR: "Para onde vamos?",
         esES: "Adónde nos vamos?",
       },
+      path: "/countries",
     },
     {
       aboutItem: false,
@@ -28,6 +29,7 @@ export const menuContent = {
         ptBR: "O que vamos fazer?",
         esES: "Qué buscamos?",
       },
+      path: "/trips",
     },
     {
       aboutItem: false,
@@ -37,6 +39,7 @@ export const menuContent = {
         ptBR: "Segurança é tudo!",
         esES: "Estea seguro!",
       },
+      path: "/insurance",
     },
     {
       aboutItem: false,
@@ -46,6 +49,7 @@ export const menuContent = {
         ptBR: "Suas aplicações",
         esES: "Tus aplicaciones",
       },
+      path: "/applications",
     },
     {
       aboutItem: false,
@@ -55,6 +59,7 @@ export const menuContent = {
         ptBR: "Suporte",
         esES: "Soporte",
       },
+      path: "/support",
     },
     {
       aboutItem: true,
@@ -64,6 +69,7 @@ export const menuContent = {
         ptBR: "ESTE PROJETO",
         esES: "ESTE PROYECTO",
       },
+      path: "/project",
     },
     {
       aboutItem: true,
@@ -73,6 +79,7 @@ export const menuContent = {
         ptBR: "O DESENVOLVEDOR",
         esES: "EL DESAROLLADOR",
       },
+      path: "/developer",
     },
   ],
 };
