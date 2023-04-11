@@ -86,34 +86,44 @@ export const menuContent = {
 
 export const countries = [
   {
+    classname: "australia",
+    currency: "AUD",
     country: { usEN: "Australia", ptBR: "Austrália", esES: "Australia" },
     flag: countryFlags.australia,
     picture: countryPics.picaustralia,
-    classname: "australia",
+    textContent: {
+      usEn: {
+        countryName: "Australia",
+        languages: ["English"],
+        mainCities: ["Sidney", "Melbourne", "Perth"],
+      },
+      ptBR: {},
+      esES: {},
+    },
   },
   {
+    classname: "canada",
     country: { usEN: "Canada", ptBR: "Canadá", esES: "Canadá" },
     flag: countryFlags.canada,
     picture: countryPics.piccanada,
-    classname: "canada",
   },
   {
+    classname: "ireland",
     country: { usEN: "Ireland", ptBR: "Irlanda", esES: "Irlanda" },
     flag: countryFlags.ireland,
     picture: countryPics.picireland,
-    classname: "ireland",
   },
   {
+    classname: "south-africa",
     country: { usEN: "South Africa", ptBR: "África do Sul", esES: "Sudáfrica" },
     flag: countryFlags.southafrica,
     picture: countryPics.picsouthafrica,
-    classname: "south-africa",
   },
   {
+    classname: "usa",
     country: { usEN: "USA", ptBR: "EUA", esES: "EEUU" },
     flag: countryFlags.usa,
     picture: countryPics.picusa,
-    classname: "usa",
   },
 ];
 

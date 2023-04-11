@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import styles from "./Header.scss";
+
 import LanguageContext from "../../context/LanguageContext";
+
 import logo from "../../assets/icons/Cloud.svg";
 import brazil from "../../assets/icons/brazil.png";
 import spain from "../../assets/icons/spain.png";
 import usa from "../../assets/icons/usa.png";
 
 export const Header = () => {
-  const { language, changeLanguage } = useContext(LanguageContext);
+  const { changeLanguage } = useContext(LanguageContext);
 
   const handleClick = (newLang) => changeLanguage(newLang);
 
