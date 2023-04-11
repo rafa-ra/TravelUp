@@ -4,7 +4,7 @@ import { countryFlags, countryPics } from "../assets/countries";
 export const menuContent = {
   title: {
     language: {
-      usEN: "ABOUT",
+      enUS: "ABOUT",
       ptBR: "SOBRE",
       esES: "SOBRE",
     },
@@ -15,7 +15,7 @@ export const menuContent = {
       aboutItem: false,
       icon: icons.country,
       language: {
-        usEN: "Where r we going?",
+        enUS: "Where r we going?",
         ptBR: "Para onde vamos?",
         esES: "Adónde nos vamos?",
       },
@@ -25,7 +25,7 @@ export const menuContent = {
       aboutItem: false,
       icon: icons.trip,
       language: {
-        usEN: "What kind of trip?",
+        enUS: "What kind of trip?",
         ptBR: "O que vamos fazer?",
         esES: "Qué buscamos?",
       },
@@ -35,7 +35,7 @@ export const menuContent = {
       aboutItem: false,
       icon: icons.insurance,
       language: {
-        usEN: "Be safe!",
+        enUS: "Be safe!",
         ptBR: "Segurança é tudo!",
         esES: "Estea seguro!",
       },
@@ -45,7 +45,7 @@ export const menuContent = {
       aboutItem: false,
       icon: icons.applications,
       language: {
-        usEN: "Your applications",
+        enUS: "Your applications",
         ptBR: "Suas aplicações",
         esES: "Tus aplicaciones",
       },
@@ -55,7 +55,7 @@ export const menuContent = {
       aboutItem: false,
       icon: icons.support,
       language: {
-        usEN: "Support",
+        enUS: "Support",
         ptBR: "Suporte",
         esES: "Soporte",
       },
@@ -65,7 +65,7 @@ export const menuContent = {
       aboutItem: true,
       icon: icons.project,
       language: {
-        usEN: "THIS PROJECT",
+        enUS: "THIS PROJECT",
         ptBR: "ESTE PROJETO",
         esES: "ESTE PROYECTO",
       },
@@ -75,7 +75,7 @@ export const menuContent = {
       aboutItem: true,
       icon: icons.developer,
       language: {
-        usEN: "THE DEVELOPER",
+        enUS: "THE DEVELOPER",
         ptBR: "O DESENVOLVEDOR",
         esES: "EL DESAROLLADOR",
       },
@@ -88,40 +88,49 @@ export const countries = [
   {
     classname: "australia",
     currency: "AUD",
-    country: { usEN: "Australia", ptBR: "Austrália", esES: "Australia" },
+    country: { enUS: "Australia", ptBR: "Austrália", esES: "Australia" },
     flag: countryFlags.australia,
     picture: countryPics.picaustralia,
     textContent: {
-      usEn: {
+      enUS: {
         countryName: "Australia",
         languages: ["English"],
         mainCities: ["Sidney", "Melbourne", "Perth"],
       },
-      ptBR: {},
-      esES: {},
+      ptBR: {
+        countryName: "Austrália",
+        languages: ["Inglês"],
+        mainCities: ["Sidney", "Melbourne", "Perth"],
+      },
+      esES: {
+        countryName: "Australia",
+        languages: ["Inglés"],
+        mainCities: ["Sidney", "Melbourne", "Perth"],
+      },
     },
+    visas: ["one", "two", "three"],
   },
   {
     classname: "canada",
-    country: { usEN: "Canada", ptBR: "Canadá", esES: "Canadá" },
+    country: { enUS: "Canada", ptBR: "Canadá", esES: "Canadá" },
     flag: countryFlags.canada,
     picture: countryPics.piccanada,
   },
   {
     classname: "ireland",
-    country: { usEN: "Ireland", ptBR: "Irlanda", esES: "Irlanda" },
+    country: { enUS: "Ireland", ptBR: "Irlanda", esES: "Irlanda" },
     flag: countryFlags.ireland,
     picture: countryPics.picireland,
   },
   {
     classname: "south-africa",
-    country: { usEN: "South Africa", ptBR: "África do Sul", esES: "Sudáfrica" },
+    country: { enUS: "South Africa", ptBR: "África do Sul", esES: "Sudáfrica" },
     flag: countryFlags.southafrica,
     picture: countryPics.picsouthafrica,
   },
   {
     classname: "usa",
-    country: { usEN: "USA", ptBR: "EUA", esES: "EEUU" },
+    country: { enUS: "USA", ptBR: "EUA", esES: "EEUU" },
     flag: countryFlags.usa,
     picture: countryPics.picusa,
   },

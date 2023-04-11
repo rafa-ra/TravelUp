@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const CountryContext = createContext();
 
 export const CountryProvider = ({ children }) => {
-  const [currentCountry, setCurrentCountry] = useState("");
+  const [currentCountry, setCurrentCountry] = useState("australia");
 
   const changeCountry = (newCountry) => {
     setCurrentCountry(newCountry);

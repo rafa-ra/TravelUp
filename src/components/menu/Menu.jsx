@@ -34,12 +34,13 @@ export const Menu = () => {
               {menuContent.items.map(
                 (item, index) =>
                   !item.aboutItem && (
-                    <Link path={item.path}>
+                    <Link path={item.path} key={item.path}>
                       <div
                         onClick={() => handleClick(index)}
                         className={`menu-item ${
                           index === activeItem ? "active" : ""
                         }`}
+                        key={item.path}
                       >
                         <div className="item-content">
                           <img src={item.icon} className="item-icon"></img>
@@ -60,12 +61,13 @@ export const Menu = () => {
               {menuContent.items.map(
                 (item, index) =>
                   item.aboutItem && (
-                    <Link path={item.path}>
+                    <Link path={item.path} key={item.path}>
                       <div
                         onClick={() => handleClick(index)}
                         className={`menu-item ${
                           index === activeItem ? "active" : ""
                         }`}
+                        key={item.path}
                       >
                         <div className="item-content">
                           <img src={item.icon} className="item-icon"></img>
@@ -93,6 +95,7 @@ export const Menu = () => {
                       className={`menu-item ${
                         index === activeItem ? "active" : ""
                       }`}
+                      key={item.path}
                     >
                       <div className="item-content">
                         <img src={item.icon} className="item-icon"></img>
@@ -113,6 +116,7 @@ export const Menu = () => {
                       className={`menu-item ${
                         index === activeItem ? "active" : ""
                       }`}
+                      key={item.path}
                     >
                       <div className="item-content">
                         <img src={item.icon} className="item-icon"></img>

@@ -9,7 +9,7 @@ import spain from "../../assets/icons/spain.png";
 import usa from "../../assets/icons/usa.png";
 
 export const Header = () => {
-  const { changeLanguage } = useContext(LanguageContext);
+  const { language, changeLanguage } = useContext(LanguageContext);
 
   const handleClick = (newLang) => changeLanguage(newLang);
 
@@ -32,7 +32,7 @@ export const Header = () => {
           src={spain}
         ></img>
         <img
-          onClick={() => handleClick("usEN")}
+          onClick={() => handleClick("enUS")}
           className="flag"
           src={usa}
         ></img>

@@ -5,9 +5,8 @@ import LanguageContext from "../../context/LanguageContext";
 
 const CountryBanner = ({ countryInfo, count }) => {
   const { language } = useContext(LanguageContext);
-  const { currentCountry, changeCountry } = useContext(CountryContext);
+  const { changeCountry } = useContext(CountryContext);
 
-  console.log(countryInfo.classname, language);
   return (
     <>
       {count % 2 === 0 ? (
@@ -22,7 +21,6 @@ const CountryBanner = ({ countryInfo, count }) => {
           ></img>
           <div className={`flip-banner ${countryInfo.classname}`}>
             <h4>{countryInfo.country[language]}</h4>
-            <h4>{currentCountry}</h4>
           </div>
           <img
             src={countryInfo.picture}
@@ -37,7 +35,6 @@ const CountryBanner = ({ countryInfo, count }) => {
         >
           <div className={`flip-banner ${countryInfo.classname}`}>
             <h4>{countryInfo.country[language]}</h4>
-            <h4>{currentCountry}</h4>
           </div>
           <img
             src={countryInfo.flag}

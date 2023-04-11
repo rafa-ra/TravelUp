@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./DetailCard.scss";
 
-const DetailCard = () => {
+const DetailCard = ({ citiesObj, currency, visas }) => {
   return (
     <div className="detail-card" styles={styles}>
-      DetailCard
+      {visas}
     </div>
   );
 };
