@@ -1,24 +1,25 @@
 import React, { useContext } from "react";
 import styles from "./CountryBanner.scss";
+import CountryContext from "../../context/CountryContext";
 import LanguageContext from "../../context/LanguageContext";
 
 const CountryBanner = ({ countryInfo, count }) => {
   const { language } = useContext(LanguageContext);
+  const { changeCountry } = useContext(CountryContext);
 
-  console.log(countryInfo.country, language);
   return (
     <>
       {count % 2 === 0 ? (
-        <div className="country-banner">
+        <div
+          className="country-banner"
+          onClick={() => changeCountry(countryInfo.classname)}
+        >
           <img
             src={countryInfo.flag}
             className="country-flag even-banner-flag"
             styles={styles}
           ></img>
-          <div
-            className={`flip-banner ${countryInfo.classname}`}
-            styles={styles}
-          >
+          <div className={`flip-banner ${countryInfo.classname}`}>
             <h4>{countryInfo.country[language]}</h4>
           </div>
           <img
@@ -28,17 +29,16 @@ const CountryBanner = ({ countryInfo, count }) => {
           ></img>
         </div>
       ) : (
-        <div className="country-banner" styles={styles}>
-          <div
-            className={`flip-banner ${countryInfo.classname}`}
-            styles={styles}
-          >
+        <div
+          className="country-banner"
+          onClick={() => changeCountry(countryInfo.classname)}
+        >
+          <div className={`flip-banner ${countryInfo.classname}`}>
             <h4>{countryInfo.country[language]}</h4>
           </div>
           <img
             src={countryInfo.flag}
             className="country-flag odd-banner-flag"
-            styles={styles}
           ></img>
           <img
             src={countryInfo.picture}

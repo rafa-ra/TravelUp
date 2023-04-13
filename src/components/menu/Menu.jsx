@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import styles from "./Menu.scss";
+import Link from "../link/Link";
 import LanguageContext from "../../context/LanguageContext";
 import { menuContent } from "../../assets/data";
-import icon from "../../assets/icons/Alerta.svg";
 import menuImg from "../../assets/icons/Menu.svg";
 
 export const Menu = () => {
@@ -34,20 +34,23 @@ export const Menu = () => {
               {menuContent.items.map(
                 (item, index) =>
                   !item.aboutItem && (
-                    <div
-                      onClick={() => handleClick(index)}
-                      className={`menu-item ${
-                        index === activeItem ? "active" : ""
-                      }`}
-                    >
-                      <div className="item-content">
-                        <img src={item.icon} className="item-icon"></img>
-                        <p>{item.language[language]}</p>
+                    <Link path={item.path} key={item.path}>
+                      <div
+                        onClick={() => handleClick(index)}
+                        className={`menu-item ${
+                          index === activeItem ? "active" : ""
+                        }`}
+                        key={item.path}
+                      >
+                        <div className="item-content">
+                          <img src={item.icon} className="item-icon"></img>
+                          <p>{item.language[language]}</p>
+                        </div>
+                        {index === activeItem && (
+                          <div className="active-item-bar"> </div>
+                        )}
                       </div>
-                      {index === activeItem && (
-                        <div className="active-item-bar"> </div>
-                      )}
-                    </div>
+                    </Link>
                   )
               )}
             </div>
@@ -58,20 +61,23 @@ export const Menu = () => {
               {menuContent.items.map(
                 (item, index) =>
                   item.aboutItem && (
-                    <div
-                      onClick={() => handleClick(index)}
-                      className={`menu-item ${
-                        index === activeItem ? "active" : ""
-                      }`}
-                    >
-                      <div className="item-content">
-                        <img src={item.icon} className="item-icon"></img>
-                        <p>{item.language[language]}</p>
+                    <Link path={item.path} key={item.path}>
+                      <div
+                        onClick={() => handleClick(index)}
+                        className={`menu-item ${
+                          index === activeItem ? "active" : ""
+                        }`}
+                        key={item.path}
+                      >
+                        <div className="item-content">
+                          <img src={item.icon} className="item-icon"></img>
+                          <p>{item.language[language]}</p>
+                        </div>
+                        {index === activeItem && (
+                          <div className="active-item-bar"> </div>
+                        )}
                       </div>
-                      {index === activeItem && (
-                        <div className="active-item-bar"> </div>
-                      )}
-                    </div>
+                    </Link>
                   )
               )}
             </div>
@@ -89,6 +95,7 @@ export const Menu = () => {
                       className={`menu-item ${
                         index === activeItem ? "active" : ""
                       }`}
+                      key={item.path}
                     >
                       <div className="item-content">
                         <img src={item.icon} className="item-icon"></img>
@@ -109,6 +116,7 @@ export const Menu = () => {
                       className={`menu-item ${
                         index === activeItem ? "active" : ""
                       }`}
+                      key={item.path}
                     >
                       <div className="item-content">
                         <img src={item.icon} className="item-icon"></img>

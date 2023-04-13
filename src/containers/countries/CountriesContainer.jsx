@@ -7,7 +7,7 @@ const CountriesContainer = () => {
   return (
     <div className="countries-container" styles={styles}>
       {countries.map((e, index) => (
-        <CountryBanner countryInfo={e} count={index} />
+        <CountryBanner countryInfo={e} count={index} key={e.classname} />
       ))}
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import styles from "./Header.scss";
+
 import LanguageContext from "../../context/LanguageContext";
+
 import logo from "../../assets/icons/Cloud.svg";
 import brazil from "../../assets/icons/brazil.png";
 import spain from "../../assets/icons/spain.png";
@@ -30,7 +32,7 @@ export const Header = () => {
           src={spain}
         ></img>
         <img
-          onClick={() => handleClick("usEN")}
+          onClick={() => handleClick("enUS")}
           className="flag"
           src={usa}
         ></img>
