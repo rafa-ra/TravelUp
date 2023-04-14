@@ -56,7 +56,7 @@ export const Menu = () => {
             </div>
             <div className="about">
               <h5 className="submenu-title">
-                {menuContent.title.language[language]}
+                {/*menuContent.title.language[language]*/}
               </h5>
               {menuContent.items.map(
                 (item, index) =>

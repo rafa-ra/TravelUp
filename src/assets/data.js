@@ -86,7 +86,7 @@ export const menuContent = {
 
 export const countries = [
   {
-    classname: "australia",
+    title: "australia",
     currency: "AUD",
     country: { enUS: "Australia", ptBR: "Austrália", esES: "Australia" },
     flag: countryFlags.australia,
@@ -111,28 +111,104 @@ export const countries = [
     visas: ["one", "two", "three"],
   },
   {
-    classname: "canada",
+    title: "canada",
+    currency: "CAD",
     country: { enUS: "Canada", ptBR: "Canadá", esES: "Canadá" },
     flag: countryFlags.canada,
     picture: countryPics.piccanada,
+    textContent: {
+      enUS: {
+        countryName: "Canada",
+        languages: ["English"],
+        mainCities: ["Toronto", "Vancouver", "Montréal"],
+      },
+      ptBR: {
+        countryName: "Canadá",
+        languages: ["Inglês"],
+        mainCities: ["Toronto", "Vancouver", "Montréal"],
+      },
+      esES: {
+        countryName: "Canadá",
+        languages: ["Inglés"],
+        mainCities: ["Toronto", "Vancouver", "Montréal"],
+      },
+    },
+    visas: ["one", "two", "three"],
   },
   {
-    classname: "ireland",
+    title: "ireland",
+    currency: "EUR",
     country: { enUS: "Ireland", ptBR: "Irlanda", esES: "Irlanda" },
     flag: countryFlags.ireland,
     picture: countryPics.picireland,
+    textContent: {
+      enUS: {
+        countryName: "Ireland",
+        languages: ["English"],
+        mainCities: ["Dublin", "Belfast", "Limerick"],
+      },
+      ptBR: {
+        countryName: "Irlanda",
+        languages: ["Inglês"],
+        mainCities: ["Dublin", "Belfast", "Limerick"],
+      },
+      esES: {
+        countryName: "Irlanda",
+        languages: ["Inglés"],
+        mainCities: ["Dublin", "Belfast", "Limerick"],
+      },
+    },
+    visas: ["one", "two", "three"],
   },
   {
-    classname: "south-africa",
+    title: "south-africa",
+    currency: "Rand",
     country: { enUS: "South Africa", ptBR: "África do Sul", esES: "Sudáfrica" },
     flag: countryFlags.southafrica,
     picture: countryPics.picsouthafrica,
+    textContent: {
+      enUS: {
+        countryName: "South Africa",
+        languages: ["English"],
+        mainCities: ["Johannesburg", "Cape Town", "Durban"],
+      },
+      ptBR: {
+        countryName: "África do Sul",
+        languages: ["Inglês"],
+        mainCities: ["Johannesburg", "Cape Town", "Durban"],
+      },
+      esES: {
+        countryName: "Sudáfrica",
+        languages: ["Inglés"],
+        mainCities: ["Johannesburg", "Cape Town", "Durban"],
+      },
+    },
+    visas: ["one", "two", "three"],
   },
   {
-    classname: "usa",
+    title: "usa",
+    currency: "USD",
     country: { enUS: "USA", ptBR: "EUA", esES: "EEUU" },
     flag: countryFlags.usa,
     picture: countryPics.picusa,
+    textContent: {
+      enUS: {
+        countryName: "USA",
+        languages: ["English"],
+        mainCities: ["Washington D.C.", "NYC", "San Francisco"],
+      },
+      ptBR: {
+        countryName: "EUA",
+        languages: ["Inglês"],
+        mainCities: ["Washington D.C.", "NYC", "San Francisco"],
+      },
+      esES: {
+        countryName: "EEUU",
+        languages: ["Inglés"],
+        mainCities: ["Washington D.C.", "NYC", "San Francisco"],
+      },
+    },
+    visas: ["one", "two", "three"],
   },
 ];
 

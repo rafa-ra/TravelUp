@@ -1,22 +1,23 @@
-import React from "react";
-import { CountryProvider } from "../../context/CountryContext";
+import React, { useContext } from "react";
+import CountryContext, { CountryProvider } from "../../context/CountryContext";
 import ContentContainer from "./ContentContainer";
 import InfoContainer from "./InfoContainer";
-import Route from "../../components/Route";
+import Route from "../../components/route/Route";
 import CountriesContainer from "../countries/CountriesContainer";
 import CountryDetailsContainer from "../countries/CountryDetailsContainer";
 import styles from "./MainContainer.scss";
-import { LanguageProvider } from "../../context/LanguageContext";
 
 export const MainContainer = () => {
+  const { currentCountry } = useContext(CountryContext);
+
   return (
     <div className="main-container" styles={styles}>
       <CountryProvider>
         <ContentContainer>
           <Route path="/countries">
-            <CountriesContainer></CountriesContainer>
+            <CountriesContainer />
           </Route>
-          <Route path="/developer">
+          <Route path={`/countries/${currentCountry}`}>
             <CountryDetailsContainer />
           </Route>
         </ContentContainer>

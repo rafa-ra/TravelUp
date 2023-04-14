@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import NavigationContext from "../context/NavigationContext";
+import NavigationContext from "../../context/NavigationContext";
 
 const Route = ({ children, path }) => {
   const { currentPath } = useContext(NavigationContext);

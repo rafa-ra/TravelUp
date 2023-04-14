@@ -12,14 +12,14 @@ const CountryBanner = ({ countryInfo, count }) => {
       {count % 2 === 0 ? (
         <div
           className="country-banner"
-          onClick={() => changeCountry(countryInfo.classname)}
+          onClick={() => changeCountry(countryInfo.title)}
         >
           <img
             src={countryInfo.flag}
             className="country-flag even-banner-flag"
             styles={styles}
           ></img>
-          <div className={`flip-banner ${countryInfo.classname}`}>
+          <div className={`flip-banner ${countryInfo.title}`}>
             <h4>{countryInfo.country[language]}</h4>
           </div>
           <img
@@ -31,9 +31,9 @@ const CountryBanner = ({ countryInfo, count }) => {
       ) : (
         <div
           className="country-banner"
-          onClick={() => changeCountry(countryInfo.classname)}
+          onClick={() => changeCountry(countryInfo.title)}
         >
-          <div className={`flip-banner ${countryInfo.classname}`}>
+          <div className={`flip-banner ${countryInfo.title}`}>
             <h4>{countryInfo.country[language]}</h4>
           </div>
           <img

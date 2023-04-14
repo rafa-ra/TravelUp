@@ -1,3 +1,5 @@
+@import "../../assets/variables";
+
 .country-details-container {
   height: 100%;
   position: relative;
@@ -23,18 +25,23 @@
 }
 
 .australia {
+  background-color: $australiaBkg;
 }
 
 .canada {
+  background-color: $canadaBkg;
 }
 
 .ireland {
+  background-color: $irelandBkg;
 }
 
 .south-africa {
+  background-color: $southAfricaBkg;
 }
 
 .usa {
+  background-color: $usaBkg;
 }
 
 .card-container {

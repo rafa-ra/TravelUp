@@ -11,24 +11,25 @@ const CountryDetailsContainer = () => {
 
   return (
     <>
-      {countries.map(({ classname, currency, textContent, visas }) =>
-        classname === currentCountry ? (
-          <div className="country-details-container" key={classname}>
-            <div className="container-header" styles={styles}>
+      {countries.map(({ title, currency, textContent, visas }) =>
+        title === currentCountry ? (
+          <div className="country-details-container" key={title}>
+            <div className="container-header">
               <div>Go back</div>
-              <div className="country-summary" styles={styles}>
-                <div className="country-title">
+              <div className="country-summary">
+                <div className={`country-title ${title}`}>
                   <h3>{textContent[language].countryName}</h3>
                 </div>
-                <div className="quick-info" styles={styles}>
-                  Quick Info
-                </div>
+                <div className="quick-info">Quick Info</div>
               </div>
             </div>
-            <div className="card-container" styles={styles}>
-              <DetailCard citiesObj={textContent[language].mainCities} />
-              <DetailCard currency={currency} />
-              <DetailCard visas={visas} />
+            <div className="card-container">
+              <DetailCard
+                country={title}
+                citiesObj={textContent[language].mainCities}
+              />
+              <DetailCard currency={currency} country={title} />
+              <DetailCard visas={visas} country={title} />
             </div>
             <div className="container-footer">
               <button>Partners</button>
