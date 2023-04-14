@@ -108,7 +108,11 @@ export const countries = [
         mainCities: ["Sidney", "Melbourne", "Perth"],
       },
     },
-    visas: ["one", "two", "three"],
+    visas: [
+      "ST01 - Student Visa",
+      "WT09 - Work & Travel",
+      "TOUR-23 - Tourist Visa",
+    ],
   },
   {
     title: "canada",
@@ -133,7 +137,11 @@ export const countries = [
         mainCities: ["Toronto", "Vancouver", "Montréal"],
       },
     },
-    visas: ["one", "two", "three"],
+    visas: [
+      "ST01 - Student Visa",
+      "WT09 - Work & Travel",
+      "TOUR-23 - Tourist Visa",
+    ],
   },
   {
     title: "ireland",
@@ -158,7 +166,11 @@ export const countries = [
         mainCities: ["Dublin", "Belfast", "Limerick"],
       },
     },
-    visas: ["one", "two", "three"],
+    visas: [
+      "ST01 - Student Visa",
+      "WT09 - Work & Travel",
+      "TOUR-23 - Tourist Visa",
+    ],
   },
   {
     title: "south-africa",
@@ -183,7 +195,11 @@ export const countries = [
         mainCities: ["Johannesburg", "Cape Town", "Durban"],
       },
     },
-    visas: ["one", "two", "three"],
+    visas: [
+      "ST01 - Student Visa",
+      "WT09 - Work & Travel",
+      "TOUR-23 - Tourist Visa",
+    ],
   },
   {
     title: "usa",
@@ -208,7 +224,11 @@ export const countries = [
         mainCities: ["Washington D.C.", "NYC", "San Francisco"],
       },
     },
-    visas: ["one", "two", "three"],
+    visas: [
+      "ST01 - Student Visa",
+      "WT09 - Work & Travel",
+      "TOUR-23 - Tourist Visa",
+    ],
   },
 ];
 

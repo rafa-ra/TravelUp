@@ -48,7 +48,7 @@ const CountryDetailsContainer = () => {
               <DetailCard visas={visas} country={title} />
             </div>
             <div className="container-footer">
-              <button>Partners</button>
+              {/*<button>Partners</button>*/}
             </div>
           </div>
         ) : null;
