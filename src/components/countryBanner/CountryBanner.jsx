@@ -5,7 +5,7 @@ import LanguageContext from "../../context/LanguageContext";
 
 const CountryBanner = ({ countryInfo, count }) => {
   const { language } = useContext(LanguageContext);
-  const { changeCountry } = useContext(CountryContext);
+  const { currentCountry, changeCountry } = useContext(CountryContext);
 
   return (
     <>

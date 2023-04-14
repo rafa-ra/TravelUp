@@ -1,4 +1,4 @@
-@import "../../assets/variables";
+@import "../../assets/variables.module";
 
 .country-details-container {
   height: 100%;
@@ -9,10 +9,17 @@
   height: 30%;
   display: flex;
   justify-content: space-between;
+
+  .goBackIconDiv {
+    margin: 30px 30px;
+    cursor: pointer;
+  }
 }
 
 .country-summary {
   position: relative;
+  color: white;
+  font: 700 20px/24px Poppins;
 }
 
 .country-title {
@@ -22,6 +29,8 @@
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .australia {

@@ -12,16 +12,14 @@ export const MainContainer = () => {
 
   return (
     <div className="main-container" styles={styles}>
-      <CountryProvider>
-        <ContentContainer>
-          <Route path="/countries">
-            <CountriesContainer />
-          </Route>
-          <Route path={`/countries/${currentCountry}`}>
-            <CountryDetailsContainer />
-          </Route>
-        </ContentContainer>
-      </CountryProvider>
+      <ContentContainer>
+        <Route path="/countries">
+          <CountriesContainer />
+        </Route>
+        <Route path={`/countries/${currentCountry}`}>
+          <CountryDetailsContainer />
+        </Route>
+      </ContentContainer>
       <InfoContainer />
     </div>
   );
