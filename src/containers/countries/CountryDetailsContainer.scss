@@ -18,19 +18,23 @@
 
 .country-summary {
   position: relative;
-  color: white;
   font: 700 20px/24px Poppins;
 }
 
 .country-title {
-  background-color: gray;
   width: 400px;
   border-radius: 2px 15px 2px 2px;
-  position: absolute;
   top: 0;
   right: 0;
   display: flex;
   justify-content: center;
+  color: white;
+}
+
+.quick-info {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .australia {

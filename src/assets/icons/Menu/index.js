@@ -5,6 +5,8 @@ import applications from "./edit.svg";
 import support from "./users.svg";
 import project from "./book-alt.svg";
 import developer from "./laptop-code.svg";
+import english from "../usa.png";
+import french from "../france.png";
 
 export const icons = {
   country,
@@ -14,4 +16,6 @@ export const icons = {
   support,
   project,
   developer,
+  english,
+  french,
 };

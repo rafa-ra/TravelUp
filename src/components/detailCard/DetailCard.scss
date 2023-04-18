@@ -1,18 +1,43 @@
-.detail-card {
+.detailCard {
   height: 300px;
   width: 300px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
-  font: 600 24px/21px "Open Sans";
+
+  .detailCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detailCardTitleDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 50px;
+    border-radius: 7px;
+    margin-top: 12px;
+  }
+
+  h3 {
+    padding: 0 12px 0;
+    font: 700 24px/21px "Open Sans";
+  }
+
+  p {
+    font: 600 20px/21px "Open Sans";
+  }
 
   ul {
     list-style-type: none;
     list-style-position: outside;
     padding: 0;
+    font: 600 20px/10px "Open Sans";
   }
 
   li {

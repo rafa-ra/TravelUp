@@ -87,8 +87,9 @@ export const menuContent = {
 export const countries = [
   {
     title: "australia",
-    currency: "AUD",
-    country: { enUS: "Australia", ptBR: "Austrália", esES: "Australia" },
+    currency: ["AUD", "A$"],
+    cost: "expensive",
+    countryLanguages: [icons.english],
     flag: countryFlags.australia,
     picture: countryPics.picaustralia,
     textContent: {
@@ -116,24 +117,25 @@ export const countries = [
   },
   {
     title: "canada",
-    currency: "CAD",
-    country: { enUS: "Canada", ptBR: "Canadá", esES: "Canadá" },
+    currency: ["CAD", "C$"],
+    cost: "regular",
+    countryLanguages: [icons.english, icons.french],
     flag: countryFlags.canada,
     picture: countryPics.piccanada,
     textContent: {
       enUS: {
         countryName: "Canada",
-        languages: ["English"],
+        languages: ["English", "French"],
         mainCities: ["Toronto", "Vancouver", "Montréal"],
       },
       ptBR: {
         countryName: "Canadá",
-        languages: ["Inglês"],
+        languages: ["Inglês", "Francês"],
         mainCities: ["Toronto", "Vancouver", "Montréal"],
       },
       esES: {
         countryName: "Canadá",
-        languages: ["Inglés"],
+        languages: ["Inglés", "Francés"],
         mainCities: ["Toronto", "Vancouver", "Montréal"],
       },
     },
@@ -145,8 +147,9 @@ export const countries = [
   },
   {
     title: "ireland",
-    currency: "EUR",
-    country: { enUS: "Ireland", ptBR: "Irlanda", esES: "Irlanda" },
+    currency: ["EUR", "\u20AC"],
+    cost: "regular",
+    countryLanguages: [icons.english],
     flag: countryFlags.ireland,
     picture: countryPics.picireland,
     textContent: {
@@ -174,8 +177,9 @@ export const countries = [
   },
   {
     title: "south-africa",
-    currency: "Rand",
-    country: { enUS: "South Africa", ptBR: "África do Sul", esES: "Sudáfrica" },
+    currency: ["ZAR", "R"],
+    cost: "low-cost",
+    countryLanguages: [icons.english],
     flag: countryFlags.southafrica,
     picture: countryPics.picsouthafrica,
     textContent: {
@@ -203,8 +207,9 @@ export const countries = [
   },
   {
     title: "usa",
-    currency: "USD",
-    country: { enUS: "USA", ptBR: "EUA", esES: "EEUU" },
+    currency: ["USD", "US$"],
+    cost: "regular",
+    countryLanguages: [icons.english],
     flag: countryFlags.usa,
     picture: countryPics.picusa,
     textContent: {

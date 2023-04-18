@@ -20,7 +20,7 @@ const CountryBanner = ({ countryInfo, count }) => {
             styles={styles}
           ></img>
           <div className={`flip-banner ${countryInfo.title}`}>
-            <h4>{countryInfo.country[language]}</h4>
+            <h4>{countryInfo.textContent[language].countryName}</h4>
           </div>
           <img
             src={countryInfo.picture}
@@ -34,7 +34,7 @@ const CountryBanner = ({ countryInfo, count }) => {
           onClick={() => changeCountry(countryInfo.title)}
         >
           <div className={`flip-banner ${countryInfo.title}`}>
-            <h4>{countryInfo.country[language]}</h4>
+            <h4>{countryInfo.textContent[language].countryName}</h4>
           </div>
           <img
             src={countryInfo.flag}
