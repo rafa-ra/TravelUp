@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import axios from "axios";
 
 import { IconContext } from "react-icons";
 import { GoChevronLeft } from "react-icons/go";
@@ -17,6 +18,18 @@ import sassVar from "../../assets/_variables.module.scss";
 const CountryDetailsContainer = () => {
   const { currentCountry } = useContext(CountryContext);
   const { language } = useContext(LanguageContext);
+  // const [weather, setWeather] = useState('')
+
+  useEffect(() => {
+    const weatherReq = async () => {
+      const weatherResults = await axios.get(
+        "https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=379a6d1f4ea4019dad587ca076cc6a99"
+      );
+      console.log(weatherResults);
+    };
+
+    weatherReq();
+  }, []);
 
   const countryCost = (cost) => {
     if (cost === "low-cost") {
@@ -62,13 +75,13 @@ const CountryDetailsContainer = () => {
                   <div className="quick-info">
                     <div className="weather-div">Weather</div>
                     <IconContext.Provider
-                      value={{ size: "20px", color: "#4CBB17" }}
+                      value={{ size: "30px", color: "#4CBB17" }}
                     >
                       {countryCost(cost)}
                     </IconContext.Provider>
                     <div className="languages-div">
                       {countryLanguages.map((e) => (
-                        <div>{e}</div>
+                        <img src={e} />
                       ))}
                     </div>
                   </div>

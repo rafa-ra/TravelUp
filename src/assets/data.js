@@ -21,66 +21,66 @@ export const menuContent = {
       },
       path: "/countries",
     },
-    // {
-    //   aboutItem: false,
-    //   icon: icons.trip,
-    //   language: {
-    //     enUS: "What kind of trip?",
-    //     ptBR: "O que vamos fazer?",
-    //     esES: "Qué buscamos?",
-    //   },
-    //   path: "/trips",
-    // },
-    // {
-    //   aboutItem: false,
-    //   icon: icons.insurance,
-    //   language: {
-    //     enUS: "Be safe!",
-    //     ptBR: "Segurança é tudo!",
-    //     esES: "Estea seguro!",
-    //   },
-    //   path: "/insurance",
-    // },
-    // {
-    //   aboutItem: false,
-    //   icon: icons.applications,
-    //   language: {
-    //     enUS: "Your applications",
-    //     ptBR: "Suas aplicações",
-    //     esES: "Tus aplicaciones",
-    //   },
-    //   path: "/applications",
-    // },
-    // {
-    //   aboutItem: false,
-    //   icon: icons.support,
-    //   language: {
-    //     enUS: "Support",
-    //     ptBR: "Suporte",
-    //     esES: "Soporte",
-    //   },
-    //   path: "/support",
-    // },
-    // {
-    //   aboutItem: true,
-    //   icon: icons.project,
-    //   language: {
-    //     enUS: "THIS PROJECT",
-    //     ptBR: "ESTE PROJETO",
-    //     esES: "ESTE PROYECTO",
-    //   },
-    //   path: "/project",
-    // },
-    // {
-    //   aboutItem: true,
-    //   icon: icons.developer,
-    //   language: {
-    //     enUS: "THE DEVELOPER",
-    //     ptBR: "O DESENVOLVEDOR",
-    //     esES: "EL DESAROLLADOR",
-    //   },
-    //   path: "/developer",
-    // },
+    {
+      aboutItem: false,
+      icon: icons.trip,
+      language: {
+        enUS: "What kind of trip?",
+        ptBR: "O que vamos fazer?",
+        esES: "Qué buscamos?",
+      },
+      path: "/trips",
+    },
+    {
+      aboutItem: false,
+      icon: icons.insurance,
+      language: {
+        enUS: "Be safe!",
+        ptBR: "Segurança é tudo!",
+        esES: "Estea seguro!",
+      },
+      path: "/insurance",
+    },
+    {
+      aboutItem: false,
+      icon: icons.applications,
+      language: {
+        enUS: "Your applications",
+        ptBR: "Suas aplicações",
+        esES: "Tus aplicaciones",
+      },
+      path: "/applications",
+    },
+    {
+      aboutItem: false,
+      icon: icons.support,
+      language: {
+        enUS: "Support",
+        ptBR: "Suporte",
+        esES: "Soporte",
+      },
+      path: "/support",
+    },
+    {
+      aboutItem: true,
+      icon: icons.project,
+      language: {
+        enUS: "THIS PROJECT",
+        ptBR: "ESTE PROJETO",
+        esES: "ESTE PROYECTO",
+      },
+      path: "/project",
+    },
+    {
+      aboutItem: true,
+      icon: icons.developer,
+      language: {
+        enUS: "THE DEVELOPER",
+        ptBR: "O DESENVOLVEDOR",
+        esES: "EL DESAROLLADOR",
+      },
+      path: "/developer",
+    },
   ],
 };
 
