@@ -7,8 +7,6 @@ export const weatherReq = async (currentCountry, setWeather) => {
   const city = countries.filter((e) => e.title === currentCountry)[0]
     .textContent.enUS.mainCities[0];
 
-  console.log(city);
-
   const weatherResults = await axios.get(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=379a6d1f4ea4019dad587ca076cc6a99`
   );
