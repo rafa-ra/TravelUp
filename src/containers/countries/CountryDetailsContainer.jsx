@@ -21,8 +21,7 @@ const CountryDetailsContainer = () => {
   const [weather, setWeather] = useState("");
 
   useEffect(() => {
-    weatherReq(setWeather);
-    console.log(weather);
+    weatherReq(currentCountry, setWeather);
   }, []);
 
   const countryCost = (cost) => {
@@ -67,7 +66,12 @@ const CountryDetailsContainer = () => {
                     <h3>{textContent[language].countryName}</h3>
                   </div>
                   <div className="quick-info">
-                    <div className="weather-div"></div>
+                    <div className="weather-div">
+                      <img
+                        className="weather-icon"
+                        src={`https://openweathermap.org/img/wn/${weather}@2x.png`}
+                      />
+                    </div>
                     <IconContext.Provider
                       value={{ size: "30px", color: "#4CBB17" }}
                     >
@@ -75,7 +79,7 @@ const CountryDetailsContainer = () => {
                     </IconContext.Provider>
                     <div className="languages-div">
                       {countryLanguages.map((e) => (
-                        <img src={e} />
+                        <img className="language-icons" src={e} key={e} />
                       ))}
                     </div>
                   </div>

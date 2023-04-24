@@ -21,7 +21,7 @@
     justify-content: space-evenly;
   }
 
-  img {
+  .language-icons {
     width: 30px;
     height: 30px;
   }
@@ -46,6 +46,13 @@
   padding: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: rgb(233, 231, 127);
+  border-radius: 2px;
+}
+
+.weather-icon {
+  width: 50px;
 }
 
 .australia {

@@ -6,6 +6,7 @@ import Route from "../../components/route/Route";
 import CountriesContainer from "../countries/CountriesContainer";
 import CountryDetailsContainer from "../countries/CountryDetailsContainer";
 import styles from "./MainContainer.scss";
+import HomeContainer from "../home/homeContainer";
 
 export const MainContainer = () => {
   const { currentCountry } = useContext(CountryContext);
@@ -13,6 +14,9 @@ export const MainContainer = () => {
   return (
     <div className="main-container" styles={styles}>
       <ContentContainer>
+        <Route path="/">
+          <HomeContainer />
+        </Route>
         <Route path="/countries">
           <CountriesContainer />
         </Route>

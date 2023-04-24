@@ -7,6 +7,7 @@ import project from "./book-alt.svg";
 import developer from "./laptop-code.svg";
 import english from "../usa.png";
 import french from "../france.png";
+import feather from "./feather.png";
 
 export const icons = {
   country,
@@ -18,4 +19,5 @@ export const icons = {
   developer,
   english,
   french,
+  feather,
 };

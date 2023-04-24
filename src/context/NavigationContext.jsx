@@ -3,10 +3,11 @@ import React, { createContext, useState, useEffect } from "react";
 export const NavigationContext = createContext();
 
 export const NavigationProvider = ({ children }) => {
-  const [currentPath, setCurrentPath] = useState("/countries");
+  const [currentPath, setCurrentPath] = useState("");
 
   useEffect(() => {
-    window.history.pushState({}, "", "/countries");
+    setCurrentPath(window.location.pathname);
+
     const handler = () => {
       setCurrentPath(window.location.pathname);
     };

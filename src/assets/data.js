@@ -1,6 +1,5 @@
 import { icons } from "../assets/icons/Menu";
 import { countryFlags, countryPics } from "../assets/countries";
-
 export const menuContent = {
   title: {
     language: {
@@ -11,6 +10,16 @@ export const menuContent = {
   },
 
   items: [
+    {
+      aboutItem: false,
+      icon: icons.feather,
+      language: {
+        enUS: "Home",
+        ptBR: "Página Inicial",
+        esES: "Página Inicial?",
+      },
+      path: "/",
+    },
     {
       aboutItem: false,
       icon: icons.country,
@@ -182,17 +191,17 @@ export const countries = [
       enUS: {
         countryName: "Ireland",
         languages: ["English"],
-        mainCities: ["Dublin", "Belfast", "Limerick"],
+        mainCities: ["Cork", "Dublin", "Limerick"],
       },
       ptBR: {
         countryName: "Irlanda",
         languages: ["Inglês"],
-        mainCities: ["Dublin", "Belfast", "Limerick"],
+        mainCities: ["Cork", "Dublin", "Limerick"],
       },
       esES: {
         countryName: "Irlanda",
         languages: ["Inglés"],
-        mainCities: ["Dublin", "Belfast", "Limerick"],
+        mainCities: ["Cork", "Dublin", "Limerick"],
       },
     },
     visas: [
