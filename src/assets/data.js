@@ -84,6 +84,32 @@ export const menuContent = {
   ],
 };
 
+export const components = {
+  detailCard: {
+    enUS: {
+      titles: {
+        mainCities: "Main Cities",
+        currency: "Currency",
+        visas: "Visas",
+      },
+    },
+    ptBR: {
+      titles: {
+        mainCities: "Principais Cidades",
+        currency: "Moeda",
+        visas: "Vistos",
+      },
+    },
+    esES: {
+      titles: {
+        mainCities: "Princ. Ciudades",
+        currency: "Moneda",
+        visas: "Visas",
+      },
+    },
+  },
+};
+
 export const countries = [
   {
     title: "australia",

@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import axios from "axios";
 
 import { IconContext } from "react-icons";
 import { GoChevronLeft } from "react-icons/go";
@@ -11,6 +10,7 @@ import LanguageContext from "../../context/LanguageContext";
 import DetailCard from "../../components/detailCard/DetailCard";
 import Link from "../../components/link/Link";
 import { countries } from "../../assets/data";
+import { weatherReq } from "../../utils/helpers/CountryDetailsHelpers";
 
 import styles from "./CountryDetailsContainer.scss";
 import sassVar from "../../assets/_variables.module.scss";
@@ -18,17 +18,11 @@ import sassVar from "../../assets/_variables.module.scss";
 const CountryDetailsContainer = () => {
   const { currentCountry } = useContext(CountryContext);
   const { language } = useContext(LanguageContext);
-  // const [weather, setWeather] = useState('')
+  const [weather, setWeather] = useState("");
 
   useEffect(() => {
-    const weatherReq = async () => {
-      const weatherResults = await axios.get(
-        "https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=379a6d1f4ea4019dad587ca076cc6a99"
-      );
-      console.log(weatherResults);
-    };
-
-    weatherReq();
+    weatherReq(setWeather);
+    console.log(weather);
   }, []);
 
   const countryCost = (cost) => {
@@ -73,7 +67,7 @@ const CountryDetailsContainer = () => {
                     <h3>{textContent[language].countryName}</h3>
                   </div>
                   <div className="quick-info">
-                    <div className="weather-div">Weather</div>
+                    <div className="weather-div"></div>
                     <IconContext.Provider
                       value={{ size: "30px", color: "#4CBB17" }}
                     >

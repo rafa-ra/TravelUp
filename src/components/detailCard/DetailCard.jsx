@@ -1,16 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./DetailCard.scss";
 import axios from "axios";
 
+import LanguageContext from "../../context/LanguageContext";
+import { components } from "../../assets/data";
+
 const DetailCard = ({ country, citiesObj, currency, visas }) => {
   // const [exchangeRate, setExchangeRate] = useState("");
+
+  const { language } = useContext(LanguageContext);
 
   const renderedElements = () => {
     if (citiesObj) {
       return (
         <div className="detailCardContent">
           <div className="detailCardTitleDiv">
-            <h3 className="detailCardTitle">Main Cities</h3>
+            <h3 className="detailCardTitle">
+              {components.detailCard[language].titles.mainCities}
+            </h3>
           </div>
           <ul>
             {citiesObj.map((e) => (
@@ -35,16 +42,20 @@ const DetailCard = ({ country, citiesObj, currency, visas }) => {
       return (
         <div className="detailCardContent">
           <div className="detailCardTitleDiv">
-            <h3 className="detailCardTitle">Currency</h3>
+            <h3 className="detailCardTitle">
+              {components.detailCard[language].titles.currency}
+            </h3>
           </div>{" "}
-          {/*<p>{`US$1.00 = ${currency[1] + exchangeRate}`}</p>*/}
+          {/* {<p>{`US$1.00 = ${currency[1] + exchangeRate}`}</p>} */}
         </div>
       );
     } else {
       return (
         <div className="detailCardContent">
           <div className="detailCardTitleDiv">
-            <h3 className="detailCardTitle">Visas</h3>
+            <h3 className="detailCardTitle">
+              {components.detailCard[language].titles.visas}
+            </h3>
           </div>{" "}
           <ul>
             {visas.map((e) => (

@@ -4,9 +4,9 @@ export const NavigationContext = createContext();
 
 export const NavigationProvider = ({ children }) => {
   const [currentPath, setCurrentPath] = useState("/countries");
-  window.history.pushState({}, "", "/countries");
 
   useEffect(() => {
+    window.history.pushState({}, "", "/countries");
     const handler = () => {
       setCurrentPath(window.location.pathname);
     };
