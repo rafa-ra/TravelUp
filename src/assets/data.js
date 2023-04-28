@@ -117,6 +117,93 @@ export const components = {
       },
     },
   },
+  homeList: {
+    latestFeatures: [
+      {
+        enUS: {
+          title: "Countries",
+          briefDescription: "Look for destinations for your trip",
+          date: "10/15/1991",
+          type: "New page",
+        },
+        ptBR: {
+          title: "Destinos",
+          briefDescription: "Procure por destinos para sua viagem",
+          date: "15/10/1991",
+          type: "Nova página",
+        },
+        esES: {
+          title: "Destinos",
+          briefDescription: "Busca destinos para tu viaje",
+          date: "15/10/1991",
+          type: "Nueva página",
+        },
+      },
+      {
+        enUS: {
+          title: "Countries",
+          briefDescription: "Look for destinations for your trip",
+          date: "10/15/1991",
+          type: "New page",
+        },
+        ptBR: {
+          title: "Destinos",
+          briefDescription: "Procure por destinos para sua viagem",
+          date: "15/10/1991",
+          type: "Nova página",
+        },
+        esES: {
+          title: "Destinos",
+          briefDescription: "Busca destinos para tu viaje",
+          date: "15/10/1991",
+          type: "Nueva página",
+        },
+      },
+      {
+        enUS: {
+          title: "Countries",
+          briefDescription: "Look for destinations for your trip",
+          date: "10/15/1991",
+          type: "New page",
+        },
+        ptBR: {
+          title: "Destinos",
+          briefDescription: "Procure por destinos para sua viagem",
+          date: "15/10/1991",
+          type: "Nova página",
+        },
+        esES: {
+          title: "Destinos",
+          briefDescription: "Busca destinos para tu viaje",
+          date: "15/10/1991",
+          type: "Nueva página",
+        },
+      },
+    ],
+
+    nextFeatures: [
+      {
+        enUS: {
+          title: "Countries",
+          briefDescription: "Look for destinations for your trip",
+          date: "10/15/1991",
+          type: "New page",
+        },
+        ptBR: {
+          title: "Next",
+          briefDescription: "Procure por destinos para sua viagem",
+          date: "15/10/1991",
+          type: "Nova página",
+        },
+        esES: {
+          title: "Destinos",
+          briefDescription: "Busca destinos para tu viaje",
+          date: "15/10/1991",
+          type: "Nueva página",
+        },
+      },
+    ],
+  },
 };
 
 export const countries = [

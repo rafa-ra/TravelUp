@@ -6,8 +6,7 @@
 }
 
 .home-container-header {
-  height: 200px;
-
+  height: 150px;
   h1 {
     font: 700 20px/24px Poppins;
   }
@@ -21,13 +20,15 @@
   }
 
   .features-grid {
-    flex-grow: 1;
+    height: 300px;
   }
 }
 
 .footer {
-  height: 200px;
+  height: 180px;
   display: flex;
+  font: 14px/17px "Open Sans";
+  color: #020202d5;
 
   .latest-features {
     width: 50%;

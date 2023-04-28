@@ -1,14 +1,15 @@
 import React from "react";
 
-import {
-  getUsersLocation,
-  weatherGeoRequest,
-} from "../../utils/helpers/homeContainerHelpers";
+import List from "../../components/list/List";
+import { components } from "../../assets/data";
+import SimpleCard from "../../components/simpleCard/SimpleCard";
+
+import { weatherReq } from "../../utils/helpers/homeContainerHelpers";
 
 import styles from "./homeContainer.scss";
 
 const HomeContainer = () => {
-  const { lat, lon } = getUsersLocation();
+  weatherReq();
 
   return (
     <div className="home-container">
@@ -20,11 +21,19 @@ const HomeContainer = () => {
         <div className="where-to-title">
           <h2>Where To</h2>
         </div>
-        <div className="features-grid">Features</div>
+        <div className="features-grid">
+          <SimpleCard />
+        </div>
       </div>
       <footer className="footer">
-        <div className="latest-features">latest</div>
-        <div className="next-features">next</div>
+        <div className="latest-features">
+          <h3>Latest</h3>
+          <List elements={components.homeList.latestFeatures} />
+        </div>
+        <div className="next-features">
+          <h3>Next</h3>
+          <List elements={components.homeList.nextFeatures} />
+        </div>
       </footer>
     </div>
   );
