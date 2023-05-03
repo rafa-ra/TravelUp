@@ -128,15 +128,15 @@ export const components = {
       color: "australia",
       path: "/countries",
     },
-    {
-      language: {
-        enUS: { title: "This project" },
-        ptBR: { title: "Este projeto" },
-        esES: { title: "Este proyecto" },
-      },
-      color: "south-africa",
-      path: "/project",
-    },
+    // {
+    //   language: {
+    //     enUS: { title: "This project" },
+    //     ptBR: { title: "Este projeto" },
+    //     esES: { title: "Este proyecto" },
+    //   },
+    //   color: "south-africa",
+    //   path: "/project",
+    // },
   ],
 
   homeList: {
