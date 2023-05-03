@@ -4,6 +4,7 @@ import LanguageContext from "../../context/LanguageContext";
 import List from "../../components/list/List";
 import { components } from "../../assets/data";
 import SimpleCard from "../../components/simpleCard/SimpleCard";
+import { icons } from "../../assets/icons/Menu";
 
 import { weatherReq } from "../../utils/helpers/homeContainerHelpers";
 
@@ -22,7 +23,9 @@ const HomeContainer = () => {
       <header className="home-container-header">
         <h1>{components.homeText[language].headerTitle}</h1>
         <div className="general-info">
-          <h2>{today}</h2>
+          <div>
+            <img src={icons.feather} />
+          </div>
         </div>
       </header>
       <div className="where-to">

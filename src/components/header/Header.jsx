@@ -3,7 +3,7 @@ import styles from "./Header.scss";
 
 import LanguageContext from "../../context/LanguageContext";
 
-import logo from "../../assets/icons/Cloud.svg";
+import { icons } from "../../assets/icons/Menu";
 import brazil from "../../assets/icons/brazil.png";
 import spain from "../../assets/icons/spain.png";
 import usa from "../../assets/icons/usa.png";
@@ -16,9 +16,8 @@ export const Header = () => {
   return (
     <header>
       <div className="logoDiv" styles={styles}>
-        <h3 className="logo-text">RAFA </h3>
-        <img src={logo} className="logo" />
-        <h3 className="logo-text"> REIS</h3>
+        <h3 className="logo-text">Travel Up </h3>
+        <img src={icons.feather} className="logo" />
       </div>
       <div className="languages">
         <img

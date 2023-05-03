@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./Menu.scss";
 import Link from "../link/Link";
 import LanguageContext from "../../context/LanguageContext";
@@ -10,6 +10,7 @@ export const Menu = () => {
   const [closedMenu, setClosedMenu] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
   const { language } = useContext(LanguageContext);
+  const { currentPath } = useContext(NavigationContext);
 
   const closedMenuClass = closedMenu ? "closed" : "";
 
@@ -18,6 +19,12 @@ export const Menu = () => {
       setActiveItem(index);
     }
   };
+
+  useEffect(() => {
+    menuContent.items.map(
+      (e, index) => e.path === currentPath && setActiveItem(index)
+    );
+  }, [currentPath]);
 
   const menuToggle = () => setClosedMenu(!closedMenu);
 

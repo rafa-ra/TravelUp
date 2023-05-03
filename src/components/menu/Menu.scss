@@ -76,8 +76,10 @@
 
 .active {
   background-color: #f8f8f8;
-  color: #ff0059;
 
+  p {
+    color: #ff0059 !important;
+  }
   img {
     filter: invert(24%) sepia(94%) saturate(7394%) hue-rotate(332deg)
       brightness(97%) contrast(108%);
