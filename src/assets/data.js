@@ -117,6 +117,28 @@ export const components = {
       },
     },
   },
+
+  homeCards: [
+    {
+      language: {
+        enUS: { title: "Countries" },
+        ptBR: { title: "Países" },
+        esES: { title: "Países" },
+      },
+      color: "australia",
+      path: "/countries",
+    },
+    {
+      language: {
+        enUS: { title: "This project" },
+        ptBR: { title: "Este projeto" },
+        esES: { title: "Este proyecto" },
+      },
+      color: "south-africa",
+      path: "/project",
+    },
+  ],
+
   homeList: {
     latestFeatures: [
       {

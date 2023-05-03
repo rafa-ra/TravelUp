@@ -2,16 +2,17 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const weatherReq = () => {
+  const [weatherData, setWeatherData] = useState({});
+
   useEffect(() => {
     async function fetchData() {
       navigator.geolocation.getCurrentPosition(async function (position) {
-        console.log(position);
         const lat = position.coords.latitude;
         const long = position.coords.longitude;
+
         const data = await axios.get(
           `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=379a6d1f4ea4019dad587ca076cc6a99`
         );
-        console.log(data);
       });
     }
     fetchData();
@@ -19,7 +20,7 @@ export const weatherReq = () => {
 
   return null;
 
-  // FUNFANDO
+  // FUNCIONANDO
   // useEffect(() => {
   //   const fetchData = async () => {
   //     navigator.geolocation.getCurrentPosition(function (position) {

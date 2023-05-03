@@ -1,11 +1,17 @@
 import React from "react";
 import styles from "./SimpleCard.scss";
 
-const SimpleCard = () => {
+import Link from "../link/Link";
+
+const SimpleCard = ({ title, color, path }) => {
   return (
-    <div className="card">
-      <h2>SimpleCard</h2>
-    </div>
+    <>
+      <Link path={path}>
+        <div className={`card ${color}`}>
+          <h2>{title}</h2>
+        </div>
+      </Link>
+    </>
   );
 };
 

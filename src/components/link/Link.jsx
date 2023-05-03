@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import styles from "./Link.scss";
 import NavigationContext from "../../context/NavigationContext";
 
 const Link = ({ children, path }) => {

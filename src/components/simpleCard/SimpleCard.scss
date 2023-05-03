@@ -1,5 +1,30 @@
+@import "../../assets/variables.module";
+
 .card {
   height: 100%;
-  background-color: gray;
+  color: white;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.australia {
+  background-color: $australiaBkg;
+}
+
+.canada {
+  background-color: $canadaBkg;
+}
+
+.ireland {
+  background-color: $irelandBkg;
+}
+
+.south-africa {
+  background-color: $southAfricaBkg;
+}
+
+.usa {
+  background-color: $usaBkg;
 }
