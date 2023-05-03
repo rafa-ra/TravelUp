@@ -10,8 +10,8 @@ const List = ({ elements }) => {
   return (
     <div>
       {elements.map((e) => (
-        <Link path={e.path} key={e}>
-          <div className="element-div" key={e}>
+        <Link path={e.path} key={e.path + e[language].title}>
+          <div className="element-div">
             <p>{e[language].title}</p>
             <p>{e[language].type}</p>
             <p>{e[language].date}</p>

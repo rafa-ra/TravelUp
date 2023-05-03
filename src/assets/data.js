@@ -16,7 +16,7 @@ export const menuContent = {
       language: {
         enUS: "Home",
         ptBR: "Página Inicial",
-        esES: "Página Inicial?",
+        esES: "Página Inicial",
       },
       path: "/",
     },

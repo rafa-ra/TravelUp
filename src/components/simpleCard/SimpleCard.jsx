@@ -6,8 +6,8 @@ import Link from "../link/Link";
 const SimpleCard = ({ title, color, path }) => {
   return (
     <>
-      <Link path={path}>
-        <div className={`card ${color}`}>
+      <Link path={path} key={title + color}>
+        <div className={`card ${color}`} key={title + color}>
           <h2>{title}</h2>
         </div>
       </Link>

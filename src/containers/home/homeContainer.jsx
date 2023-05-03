@@ -12,9 +12,6 @@ import styles from "./homeContainer.scss";
 
 const HomeContainer = () => {
   const { language } = useContext(LanguageContext);
-  const date = new Date();
-  const today = date.toLocaleDateString();
-  console.log(today);
 
   weatherReq();
 
@@ -38,6 +35,7 @@ const HomeContainer = () => {
               title={e.language[language].title}
               color={e.color}
               path={e.path}
+              key={e.language[language].title}
             />
           ))}
         </div>
