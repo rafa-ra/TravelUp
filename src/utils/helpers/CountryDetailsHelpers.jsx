@@ -41,6 +41,5 @@ export const weatherReq = async (currentCountry, setWeather) => {
     icon = "04d";
   }
 
-  console.log(icon);
   return setWeather(icon);
 };

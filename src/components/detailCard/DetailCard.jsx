@@ -6,7 +6,7 @@ import LanguageContext from "../../context/LanguageContext";
 import { components } from "../../assets/data";
 
 const DetailCard = ({ country, citiesObj, currency, visas }) => {
-  // const [exchangeRate, setExchangeRate] = useState("");
+  const [exchangeRate, setExchangeRate] = useState("");
 
   const { language } = useContext(LanguageContext);
 
@@ -27,17 +27,17 @@ const DetailCard = ({ country, citiesObj, currency, visas }) => {
         </div>
       );
     } else if (currency) {
-      // const forExReq = async () => {
-      //   let reqResults = await axios.get(
-      //     `https://api.currencyapi.com/v3/latest?apikey=WMlVoSs89iP3NyT8cPqgnNEim1cAVQ64CfWiW798&currencies=${currency[0]}`
-      //   );
+      const forExReq = async () => {
+        let reqResults = await axios.get(
+          `https://api.currencyapi.com/v3/latest?apikey=WMlVoSs89iP3NyT8cPqgnNEim1cAVQ64CfWiW798&currencies=${currency[0]}`
+        );
 
-      //   setExchangeRate(reqResults.data.data[currency[0]].value);
-      // };
+        setExchangeRate(reqResults.data.data[currency[0]].value);
+      };
 
-      // useEffect(() => {
-      //   forExReq();
-      // }, []);
+      useEffect(() => {
+        forExReq();
+      }, []);
 
       return (
         <div className="detailCardContent">
@@ -46,7 +46,7 @@ const DetailCard = ({ country, citiesObj, currency, visas }) => {
               {components.detailCard[language].titles.currency}
             </h3>
           </div>{" "}
-          {/* {<p>{`US$1.00 = ${currency[1] + exchangeRate}`}</p>} */}
+          {<p>{`US$1.00 = ${currency[1] + exchangeRate}`}</p>}
         </div>
       );
     } else {
