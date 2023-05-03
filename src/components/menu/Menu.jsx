@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import styles from "./Menu.scss";
 import Link from "../link/Link";
 import LanguageContext from "../../context/LanguageContext";
+import NavigationContext from "../../context/NavigationContext";
 import { menuContent } from "../../assets/data";
 import menuImg from "../../assets/icons/Menu.svg";
 

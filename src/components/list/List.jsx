@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styles from "./List.scss";
 
+import Link from "../link/Link";
 import LanguageContext from "../../context/LanguageContext";
 
 const List = ({ elements }) => {
@@ -9,13 +10,13 @@ const List = ({ elements }) => {
   return (
     <div>
       {elements.map((e) => (
-        <a href="" key={e}>
+        <Link path={e.path} key={e}>
           <div className="element-div" key={e}>
             <p>{e[language].title}</p>
             <p>{e[language].type}</p>
             <p>{e[language].date}</p>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );
