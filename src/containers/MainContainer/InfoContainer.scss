@@ -1,0 +1,38 @@
+.info-container {
+  height: 100%;
+}
+
+.title-div {
+  margin: 20px 0 0 20px;
+  font-family: Poppins;
+  line-height: 20px;
+
+  .container-title {
+    font-size: 24px;
+  }
+
+  .reference-container {
+    font-size: 22px;
+  }
+}
+
+.content {
+  height: 500px;
+  margin: 20px 10px 0 20px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 15px;
+}
+
+.tech-div {
+  border-radius: 8px;
+}
+
+.challenges-div {
+  border-radius: 8px;
+}
+
+.content-title {
+  margin-left: 20px;
+  font: 700 16px/24px Poppins;
+}
