@@ -2,7 +2,7 @@ import { icons } from "../assets/icons/Menu";
 import { countryFlags, countryPics } from "../assets/countries";
 export const menuContent = {
   title: {
-    language: {
+    title: {
       enUS: "ABOUT",
       ptBR: "SOBRE",
       esES: "SOBRE",
@@ -13,27 +13,51 @@ export const menuContent = {
     {
       aboutItem: false,
       icon: icons.feather,
-      language: {
+      title: {
         enUS: "Home",
         ptBR: "Página Inicial",
         esES: "Página Inicial",
       },
       path: "/",
+      infoContainer: {
+        technologies: {
+          code: [],
+          design: [],
+          others: [],
+        },
+        challenges: {
+          enUS: "Challenges",
+          ptBR: "Desafios",
+          esES: "Desafios",
+        },
+      },
     },
     {
       aboutItem: false,
       icon: icons.country,
-      language: {
+      title: {
         enUS: "Where r we going?",
         ptBR: "Para onde vamos?",
         esES: "Adónde nos vamos?",
       },
       path: "/countries",
+      infoContainer: {
+        technologies: {
+          code: [],
+          design: [],
+          others: [],
+        },
+        challenges: {
+          enUS: "Challenges",
+          ptBR: "Desafios",
+          esES: "Desafios",
+        },
+      },
     },
     // {
     //   aboutItem: false,
     //   icon: icons.trip,
-    //   language: {
+    //   title: {
     //     enUS: "What kind of trip?",
     //     ptBR: "O que vamos fazer?",
     //     esES: "Qué buscamos?",
@@ -43,7 +67,7 @@ export const menuContent = {
     // {
     //   aboutItem: false,
     //   icon: icons.insurance,
-    //   language: {
+    //   title: {
     //     enUS: "Be safe!",
     //     ptBR: "Segurança é tudo!",
     //     esES: "Estea seguro!",
@@ -53,7 +77,7 @@ export const menuContent = {
     // {
     //   aboutItem: false,
     //   icon: icons.applications,
-    //   language: {
+    //   title: {
     //     enUS: "Your applications",
     //     ptBR: "Suas aplicações",
     //     esES: "Tus aplicaciones",
@@ -63,27 +87,39 @@ export const menuContent = {
     // {
     //   aboutItem: false,
     //   icon: icons.support,
-    //   language: {
+    //   title: {
     //     enUS: "Support",
     //     ptBR: "Suporte",
     //     esES: "Soporte",
     //   },
     //   path: "/support",
     // },
-    // {
-    //   aboutItem: true,
-    //   icon: icons.project,
-    //   language: {
-    //     enUS: "THIS PROJECT",
-    //     ptBR: "ESTE PROJETO",
-    //     esES: "ESTE PROYECTO",
-    //   },
-    //   path: "/project",
-    // },
+    {
+      aboutItem: true,
+      icon: icons.project,
+      title: {
+        enUS: "THIS PROJECT",
+        ptBR: "ESTE PROJETO",
+        esES: "ESTE PROYECTO",
+      },
+      path: "/project",
+      infoContainer: {
+        technologies: {
+          code: [],
+          design: [],
+          others: [],
+        },
+        challenges: {
+          enUS: "",
+          ptBR: "",
+          esES: "",
+        },
+      },
+    },
     // {
     //   aboutItem: true,
     //   icon: icons.developer,
-    //   language: {
+    //   title: {
     //     enUS: "THE DEVELOPER",
     //     ptBR: "O DESENVOLVEDOR",
     //     esES: "EL DESAROLLADOR",
@@ -120,7 +156,7 @@ export const components = {
 
   homeCards: [
     {
-      language: {
+      title: {
         enUS: { title: "Countries" },
         ptBR: { title: "Países" },
         esES: { title: "Países" },
@@ -290,6 +326,23 @@ export const components = {
       nextFeatures: "En breve",
     },
   },
+  countryDetailsInfoContainer: {
+    title: {
+      enUS: "Country Details",
+      ptBR: "Detalhes dos países",
+      esES: "Detalles de los Países",
+    },
+    technologies: {
+      code: [],
+      design: [],
+      others: [],
+    },
+    challenges: {
+      enUS: "challenges",
+      ptBR: "challenges",
+      esES: "challenges",
+    },
+  },
 };
 
 export const countries = [
@@ -443,10 +496,4 @@ export const countries = [
       "TOUR-23 - Tourist Visa",
     ],
   },
-];
-
-export const accordionOptions = [
-  { title: 0, description: "description 0" },
-  { title: 1, description: "description 1" },
-  { title: 2, description: "description 2" },
 ];

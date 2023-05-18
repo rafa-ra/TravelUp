@@ -32,10 +32,10 @@ const HomeContainer = () => {
         <div className="features-grid">
           {components.homeCards.map((e) => (
             <SimpleCard
-              title={e.language[language].title}
+              title={e.title[language].title}
               color={e.color}
               path={e.path}
-              key={e.language[language].title}
+              key={e.title[language].title}
             />
           ))}
         </div>

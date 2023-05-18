@@ -10,6 +10,7 @@ Nesta aplicação você encontrará:
 React:
 
 -JSX
+-Virtual DOM
 -useState
 -useEffect
 -useContext

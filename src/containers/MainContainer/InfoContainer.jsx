@@ -3,19 +3,35 @@ import styles from "./InfoContainer.scss";
 
 import NavigationContext from "../../context/NavigationContext";
 import LanguageContext from "../../context/LanguageContext";
-import { menuContent } from "../../assets/data";
+import { menuContent, components } from "../../assets/data";
 
 const InfoContainer = () => {
   const { currentPath } = useContext(NavigationContext);
   const { language } = useContext(LanguageContext);
-  const [information, setInformation] = useState([]);
+  const [information, setInformation] = useState(null);
+
+  const isCountryContainer = () => {
+    if (
+      currentPath != "/" &&
+      currentPath != "/project" &&
+      currentPath != "/countries"
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
   useEffect(() => {
-    if (currentPath) {
-      const filteredInfo = menuContent.items.filter(
-        (e) => e.path === currentPath
-      );
-      setInformation(filteredInfo[0].language[language]);
+    if (currentPath && language) {
+      if (isCountryContainer()) {
+        setInformation(components.countryDetailsInfoContainer);
+      } else {
+        const filteredInfo = menuContent.items.filter(
+          (e) => e.path === currentPath
+        );
+        setInformation(filteredInfo[0]);
+      }
     }
   }, [currentPath, language]);
 
@@ -23,7 +39,9 @@ const InfoContainer = () => {
     <div className="info-container" styles={styles}>
       <div className="title-div">
         <h2 className="container-title">Info Container:</h2>
-        <h3 className="reference-container">{information}</h3>
+        {information && (
+          <h3 className="reference-container">{information.title[language]}</h3>
+        )}
       </div>
       <div className="content">
         <div className="tech-div">
@@ -32,9 +50,7 @@ const InfoContainer = () => {
         </div>
         <div className="challenges-div">
           <h3 className="content-title">Challenges</h3>
-          <textarea className="challenges-description">
-            Example Description
-          </textarea>
+          <p className="challenges-description"></p>
         </div>
       </div>
     </div>

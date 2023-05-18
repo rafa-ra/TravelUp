@@ -52,7 +52,7 @@ export const Menu = () => {
                       >
                         <div className="item-content">
                           <img src={item.icon} className="item-icon"></img>
-                          <p>{item.language[language]}</p>
+                          <p>{item.title[language]}</p>
                         </div>
                         {index === activeItem && (
                           <div className="active-item-bar"> </div>
@@ -79,7 +79,7 @@ export const Menu = () => {
                       >
                         <div className="item-content">
                           <img src={item.icon} className="item-icon"></img>
-                          <p>{item.language[language]}</p>
+                          <p>{item.title[language]}</p>
                         </div>
                         {index === activeItem && (
                           <div className="active-item-bar"> </div>
