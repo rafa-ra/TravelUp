@@ -1,5 +1,6 @@
 import { icons } from "../assets/icons/Menu";
 import { countryFlags, countryPics } from "../assets/countries";
+
 export const menuContent = {
   title: {
     title: {
@@ -20,15 +21,34 @@ export const menuContent = {
       },
       path: "/",
       infoContainer: {
-        technologies: {
-          code: [],
-          design: [],
-          others: [],
+        tech: {
+          code: [
+            "javascript ES6",
+            "react.js",
+            "context API",
+            "props",
+            "manual i18n",
+            "routing",
+            "array.map()",
+            "conditional rendering",
+            "inline methods",
+          ],
+          design: ["CSS grid", "position"],
+          others: ["SVG"],
         },
         challenges: {
-          enUS: "Challenges",
-          ptBR: "Desafios",
-          esES: "Desafios",
+          enUS: [
+            "Implementation of navigation and i18n Contexts",
+            "Development of a layout suitable for the needs",
+          ],
+          ptBR: [
+            "Implementação dos Contexts de navegação e i18n",
+            "Desenvolvimento de um layout adequado à necessidade",
+          ],
+          esES: [
+            "Implementación de los contextos de navegación e i18n",
+            "Desarrollo de un diseño adecuado a las necesidades",
+          ],
         },
       },
     },
@@ -42,15 +62,34 @@ export const menuContent = {
       },
       path: "/countries",
       infoContainer: {
-        technologies: {
-          code: [],
-          design: [],
-          others: [],
+        tech: {
+          code: [
+            "javascript ES6",
+            "react.js",
+            "context API",
+            "props",
+            "manual i18n",
+            "routing",
+            "array.map()",
+            "conditional rendering",
+            "inline methods",
+          ],
+          design: ["CSS Flexbox", "z-index", "transitions"],
+          others: ["SVG"],
         },
         challenges: {
-          enUS: "Challenges",
-          ptBR: "Desafios",
-          esES: "Desafios",
+          enUS: [
+            "Implementation of navigation and i18n Contexts",
+            "Manual implementation of banner transitions on hover, without the use of external libraries",
+          ],
+          ptBR: [
+            "Implementação dos Contexts de navegação e i18n",
+            "Implementação manual das transições dos banners em estado de hover, sem a utilização de bibliotecas externas",
+          ],
+          esES: [
+            "Implementación de los contextos de navegación e i18n",
+            "Implementación manual de las transiciones de los banners en estado de hover, sin utilizar bibliotecas externas",
+          ],
         },
       },
     },
@@ -94,28 +133,37 @@ export const menuContent = {
     //   },
     //   path: "/support",
     // },
-    {
-      aboutItem: true,
-      icon: icons.project,
-      title: {
-        enUS: "THIS PROJECT",
-        ptBR: "ESTE PROJETO",
-        esES: "ESTE PROYECTO",
-      },
-      path: "/project",
-      infoContainer: {
-        technologies: {
-          code: [],
-          design: [],
-          others: [],
-        },
-        challenges: {
-          enUS: "",
-          ptBR: "",
-          esES: "",
-        },
-      },
-    },
+    // {
+    //   aboutItem: true,
+    //   icon: icons.project,
+    //   title: {
+    //     enUS: "THIS PROJECT",
+    //     ptBR: "ESTE PROJETO",
+    //     esES: "ESTE PROYECTO",
+    //   },
+    //   path: "/project",
+    //   infoContainer: {
+    //     technologies: {
+    //       code: [],
+    //       design: [],
+    //       others: [],
+    //     },
+    //     challenges: {
+    //       enUS: [
+    //         "Implementation of navigation and i18n Contexts",
+    //         "Definition of essential information and proper distribution within the layout",
+    //       ],
+    //       ptBR: [
+    //         "Implementação dos Contexts de navegação e i18n",
+    //         "Definição de informações essenciais e distribuição adequada dentro do layout",
+    //       ],
+    //       esES: [
+    //         "Implementación de los contextos de navegación e i18n",
+    //         "Definición de información esencial y distribución adecuada dentro del diseño",
+    //       ],
+    //     },
+    //   },
+    // },
     // {
     //   aboutItem: true,
     //   icon: icons.developer,
@@ -178,6 +226,26 @@ export const components = {
   homeList: {
     latestFeatures: [
       {
+        enUS: {
+          title: "Info Container",
+          briefDescription: "Explanatory section for each page",
+          date: "May/2023",
+          type: "Component, Design",
+        },
+        ptBR: {
+          title: "Info Container",
+          briefDescription: "Seção explicativa para cada página",
+          date: "Maio/2023",
+          type: "Component, Design",
+        },
+        esES: {
+          title: "Info Container",
+          briefDescription: "Sección explicativa para cada página",
+          date: "Mayo",
+          type: "Component, Design",
+        },
+      },
+      {
         path: "/countries",
         enUS: {
           title: "Countries",
@@ -219,27 +287,6 @@ export const components = {
           type: "Componente, Design",
         },
       },
-      {
-        path: "/",
-        enUS: {
-          title: "Home Page",
-          briefDescription: "Home Page",
-          date: "May/2023",
-          type: "New page",
-        },
-        ptBR: {
-          title: "Página inicial",
-          briefDescription: "Página inicial",
-          date: "Maio/2023",
-          type: "Nova página",
-        },
-        esES: {
-          title: "Página inicial",
-          briefDescription: "Página inicial",
-          date: "Mayo/2023",
-          type: "Nueva página",
-        },
-      },
     ],
 
     nextFeatures: [
@@ -263,26 +310,7 @@ export const components = {
       //     type: "Design",
       //   },
       // },
-      {
-        enUS: {
-          title: "Info Container",
-          briefDescription: "Explanatory section for each page",
-          date: "June/2023",
-          type: "Component, Design",
-        },
-        ptBR: {
-          title: "Info Container",
-          briefDescription: "Seção explicativa para cada página",
-          date: "Junho/2023",
-          type: "Component, Design",
-        },
-        esES: {
-          title: "Info Container",
-          briefDescription: "Sección explicativa para cada página",
-          date: "Junio",
-          type: "Component, Design",
-        },
-      },
+
       {
         enUS: {
           title: '"This Project" Page',
@@ -326,21 +354,64 @@ export const components = {
       nextFeatures: "En breve",
     },
   },
+
+  infoContainer: {
+    title: {
+      enUS: "Info Container",
+      ptBR: "Container de Informações",
+      esES: "Container de Información",
+    },
+    description: {
+      enUS: "Get to know a bit more about the development of the present container on your left-hand side",
+      ptBR: "Saiba um pouco mais sobre o desenvolvimento do container sendo exibido ao lado",
+      esES: "Sepa un poco más acerca del desarrolo del container a su izquierda",
+    },
+
+    tech: {
+      enUS: "Tools and Technology",
+      ptBR: "Ferramentas e Tecnologia",
+      esES: "Herramientas y Tecnología",
+    },
+    challenges: {
+      enUS: "Challenges",
+      ptBR: "Desafios",
+      esES: "Desafíos",
+    },
+  },
+
   countryDetailsInfoContainer: {
     title: {
       enUS: "Country Details",
       ptBR: "Detalhes dos países",
       esES: "Detalles de los Países",
     },
-    technologies: {
-      code: [],
-      design: [],
-      others: [],
+    tech: {
+      code: [
+        "javascript ES6",
+        "react.js",
+        "useState",
+        "useEffect",
+        "context API",
+        "props",
+        "ternary",
+        "destructuring",
+        "manual i18n",
+        "routing",
+        "array.map()",
+      ],
+      design: ["CSS Flexbox", "z-index", "transitions"],
+      others: ["SVG"],
     },
     challenges: {
-      enUS: "challenges",
-      ptBR: "challenges",
-      esES: "challenges",
+      enUS: ["External API consumption", "Async fuctions and data handling"],
+      ptBR: [
+        "Consumo de API externa",
+        "Funções e manipulação assíncrona de dados",
+      ],
+      esES: [
+        "Consumo de API externa",
+        "Funciones y manipulación asíncrona de datos",
+      ],
     },
   },
 };

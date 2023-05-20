@@ -1,5 +1,6 @@
 .info-container {
   height: 100%;
+  width: 25%;
 }
 
 .title-div {
@@ -8,11 +9,16 @@
   line-height: 20px;
 
   .container-title {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #5e5d5d;
   }
 
   .reference-container {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -26,10 +32,17 @@
 
 .tech-div {
   border-radius: 8px;
+
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
 }
 
 .challenges-div {
   border-radius: 8px;
+  font-family: Poppins;
 }
 
 .content-title {

@@ -93,9 +93,7 @@ const CountryDetailsContainer = () => {
                 <DetailCard currency={currency} country={title} />
                 <DetailCard visas={visas} country={title} />
               </div>
-              <div className="container-footer">
-                {/*<button>Partners</button>*/}
-              </div>
+              <div className="container-footer"></div>
             </div>
           ) : null;
         }
