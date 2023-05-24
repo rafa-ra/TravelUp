@@ -33,8 +33,8 @@ export const menuContent = {
             "conditional rendering",
             "inline methods",
           ],
-          design: ["CSS grid", "position"],
-          others: ["SVG"],
+          design: ["CSS3", "CSS grid", "position", "SASS"],
+          others: ["HTML5", "SVG"],
         },
         challenges: {
           enUS: [
@@ -74,8 +74,8 @@ export const menuContent = {
             "conditional rendering",
             "inline methods",
           ],
-          design: ["CSS Flexbox", "z-index", "transitions"],
-          others: ["SVG"],
+          design: ["CSS3", "CSS Flexbox", "z-index", "transitions", "SASS"],
+          others: ["HTML5", "SVG"],
         },
         challenges: {
           enUS: [
@@ -133,37 +133,37 @@ export const menuContent = {
     //   },
     //   path: "/support",
     // },
-    // {
-    //   aboutItem: true,
-    //   icon: icons.project,
-    //   title: {
-    //     enUS: "THIS PROJECT",
-    //     ptBR: "ESTE PROJETO",
-    //     esES: "ESTE PROYECTO",
-    //   },
-    //   path: "/project",
-    //   infoContainer: {
-    //     technologies: {
-    //       code: [],
-    //       design: [],
-    //       others: [],
-    //     },
-    //     challenges: {
-    //       enUS: [
-    //         "Implementation of navigation and i18n Contexts",
-    //         "Definition of essential information and proper distribution within the layout",
-    //       ],
-    //       ptBR: [
-    //         "Implementação dos Contexts de navegação e i18n",
-    //         "Definição de informações essenciais e distribuição adequada dentro do layout",
-    //       ],
-    //       esES: [
-    //         "Implementación de los contextos de navegación e i18n",
-    //         "Definición de información esencial y distribución adecuada dentro del diseño",
-    //       ],
-    //     },
-    //   },
-    // },
+    {
+      aboutItem: true,
+      icon: icons.project,
+      title: {
+        enUS: "THIS PROJECT",
+        ptBR: "ESTE PROJETO",
+        esES: "ESTE PROYECTO",
+      },
+      path: "/project",
+      infoContainer: {
+        tech: {
+          code: ["javascript ES6", "react.js"],
+          design: ["CSS3", "CSS Flexbox", "SASS"],
+          others: ["HTML5"],
+        },
+        challenges: {
+          enUS: [
+            "Implementation of navigation and i18n Contexts",
+            "Definition of essential information and proper distribution within the layout",
+          ],
+          ptBR: [
+            "Implementação dos Contexts de navegação e i18n",
+            "Definição de informações essenciais e distribuição adequada dentro do layout",
+          ],
+          esES: [
+            "Implementación de los contextos de navegación e i18n",
+            "Definición de información esencial y distribución adecuada dentro del diseño",
+          ],
+        },
+      },
+    },
     // {
     //   aboutItem: true,
     //   icon: icons.developer,

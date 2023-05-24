@@ -1,0 +1,75 @@
+.project-container {
+  height: 100%;
+  font-family: Poppins;
+}
+
+.about-project {
+  height: 60%;
+  padding: 60px 42px 0;
+  display: flex;
+  gap: 20px;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+.about-me {
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-around;
+
+  .left-content {
+    width: 40%;
+    display: flex;
+    gap: 30px;
+
+    .photo {
+      width: 140px;
+      border-radius: 50%;
+    }
+
+    .text-info {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    .job-title {
+      color: #ff0059;
+      font-weight: 400;
+    }
+
+    .email {
+      margin-top: 10px;
+    }
+
+    h4,
+    p {
+      margin: 0;
+    }
+  }
+
+  .about-me-social {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+
+    .icons {
+      width: 50px;
+    }
+  }
+}

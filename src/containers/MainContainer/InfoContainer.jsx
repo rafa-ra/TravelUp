@@ -30,7 +30,6 @@ const InfoContainer = () => {
       nestedInformation.tech &&
       nestedInformation.tech[type] &&
       nestedInformation.tech[type].map((e) => {
-        console.log(e);
         return (
           <Tag key={e} type={type}>
             {e}
