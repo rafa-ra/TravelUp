@@ -1,45 +1,30 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styles from "./ProjectContainer.scss";
 import foto from "../../assets/images/foto-pessoal.jpeg";
 import github from "../../assets/images/github-sign.png";
 import linkedin from "../../assets/images/linkedin.png";
 import wpp from "../../assets/images/whatsapp.png";
 
+import LanguageContext from "../../context/LanguageContext";
+import { menuContent } from "../../assets/data";
+
 const ProjectContainer = () => {
+  const { language } = useContext(LanguageContext);
+
+  const pageInfo = menuContent.items.filter((e) => e.path === "/project")[0];
+
+  const whatText = "This is the first line. \n\r This is the second line.";
+
   return (
     <div className="project-container">
       <div className="about-project">
         <div className="about-text-content">
-          <h2>What is this project?</h2>
-          <p>
-            Embark on an unforgettable journey with us and indulge in the thrill
-            of exploration. Our expert team has curated the perfect itinerary,
-            designed to immerse you in captivating destinations and create
-            memories that will last a lifetime. Embark on an unforgettable
-            journey with us and indulge in the thrill of exploration. Our expert
-            team has curated the perfect itinerary, designed to immerse you in
-            captivating destinations and create memories that will last a
-            lifetime. Embark on an unforgettable journey with us and indulge in
-            the thrill of exploration. Our expert team has curated the perfect
-            itinerary, designed to immerse you in captivating destinations and
-            create memories that will last a lifetime.
-          </p>
+          <h2>{pageInfo.containerText.what.title[language]}</h2>
+          <p>{whatText}</p>
         </div>
         <div className="about-process">
-          <h2>The process</h2>
-          <p>
-            Embark on an unforgettable journey with us and indulge in the thrill
-            of exploration. Our expert team has curated the perfect itinerary,
-            designed to immerse you in captivating destinations and create
-            memories that will last a lifetime. Embark on an unforgettable
-            journey with us and indulge in the thrill of exploration. Our expert
-            team has curated the perfect itinerary, designed to immerse you in
-            captivating destinations and create memories that will last a
-            lifetime. Embark on an unforgettable journey with us and indulge in
-            the thrill of exploration. Our expert team has curated the perfect
-            itinerary, designed to immerse you in captivating destinations and
-            create memories that will last a lifetime.
-          </p>
+          <h2>{pageInfo.containerText.process.title[language]}</h2>
+          <p></p>
         </div>
       </div>
       <hr></hr>
