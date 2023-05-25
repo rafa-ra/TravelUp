@@ -44,16 +44,13 @@ const InfoContainer = () => {
       if (isCountryContainer()) {
         setBasicInformation(components.countryDetailsInfoContainer);
         setNestedInformation(components.countryDetailsInfoContainer);
-        console.log("Country:");
       } else {
         const filteredInfo = menuContent.items.filter(
           (e) => e.path === currentPath
         );
         setBasicInformation(filteredInfo[0]);
         setNestedInformation(filteredInfo[0].infoContainer);
-        console.log("Menu:");
       }
-      console.log(nestedInformation);
     }
   }, [currentPath, language]);
 

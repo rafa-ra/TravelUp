@@ -263,6 +263,15 @@ export const components = {
       color: "australia",
       path: "/countries",
     },
+    {
+      title: {
+        enUS: { title: "This Project" },
+        ptBR: { title: "Este Projeto" },
+        esES: { title: "Este Proyecto" },
+      },
+      color: "south-africa",
+      path: "/project",
+    },
     // {
     //   language: {
     //     enUS: { title: "This project" },
