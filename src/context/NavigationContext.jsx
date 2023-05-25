@@ -6,8 +6,14 @@ export const NavigationProvider = ({ children }) => {
   const [currentPath, setCurrentPath] = useState("");
 
   useEffect(() => {
-    setCurrentPath("/project");
-    window.history.pushState({}, "", "project");
+    const defaultPage = () => {
+      setCurrentPath("/project");
+      window.history.pushState({}, "", "project");
+    };
+
+    window.location.pathname === "/"
+      ? defaultPage()
+      : setCurrentPath(window.location.pathname);
 
     const handler = () => {
       setCurrentPath(window.location.pathname);

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Tooltip } from "react-tooltip";
 
 import { IconContext } from "react-icons";
 import { GoChevronLeft } from "react-icons/go";
@@ -21,13 +22,13 @@ const CountryDetailsContainer = () => {
   const [weather, setWeather] = useState("");
 
   useEffect(() => {
-    weatherReq(currentCountry, setWeather);
-  }, []);
+    weatherReq(currentCountry, language, setWeather);
+  }, [language]);
 
   const countryCost = (cost) => {
-    if (cost === "low-cost") {
+    if (cost.cost === "low-cost") {
       return <BsCurrencyDollar />;
-    } else if (cost === "regular") {
+    } else if (cost.cost === "regular") {
       return (
         <div className="cost-div">
           <BsCurrencyDollar />
@@ -67,18 +68,38 @@ const CountryDetailsContainer = () => {
                   </div>
                   <div className="quick-info">
                     <div className="weather-div">
+                      <Tooltip id="weather" style={{ fontFamily: "Poppins" }} />
                       <img
                         className="weather-icon"
-                        src={`https://openweathermap.org/img/wn/${weather}@2x.png`}
+                        src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+                        data-tooltip-id="weather"
+                        data-tooltip-content={weather.description}
+                        data-tooltip-place="bottom"
                       />
                     </div>
-                    <IconContext.Provider
-                      value={{ size: "30px", color: "#4CBB17" }}
+                    <Tooltip id="cost" style={{ fontFamily: "Poppins" }} />
+                    <div
+                      className="cost"
+                      data-tooltip-id="cost"
+                      data-tooltip-content={cost.tooltipText[language]}
+                      data-tooltip-place="bottom"
                     >
-                      {countryCost(cost)}
-                    </IconContext.Provider>
-                    <div className="languages-div">
-                      {countryLanguages.map((e) => (
+                      <IconContext.Provider
+                        value={{ size: "30px", color: "#4CBB17" }}
+                      >
+                        {countryCost(cost)}
+                      </IconContext.Provider>
+                    </div>
+                    <Tooltip id="languages" style={{ fontFamily: "Poppins" }} />
+                    <div
+                      className="languages-div"
+                      data-tooltip-id="languages"
+                      data-tooltip-content={
+                        countryLanguages.tooltipText[language]
+                      }
+                      data-tooltip-place="bottom"
+                    >
+                      {countryLanguages.icons.map((e) => (
                         <img className="language-icons" src={e} key={e} />
                       ))}
                     </div>

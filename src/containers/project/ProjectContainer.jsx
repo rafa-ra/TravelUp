@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { Tooltip } from "react-tooltip";
 import styles from "./ProjectContainer.scss";
 import foto from "../../assets/images/foto-pessoal.jpeg";
 import github from "../../assets/images/github-sign.png";
@@ -42,13 +43,34 @@ const ProjectContainer = () => {
           </div>
         </div>
         <div className="about-me-social">
-          <a href="https://github.com/rafa-ra" target="_blank">
+          <Tooltip id="github" />
+          <a
+            href="https://github.com/rafa-ra"
+            target="_blank"
+            data-tooltip-id="github"
+            data-tooltip-content="Github"
+            data-tooltip-place="top"
+          >
             <img className="icons" src={github} />
           </a>
-          <a href="https://linkedin.com/in/rafaelreisaraujo" target="_blank">
+          <Tooltip id="linkedin" />
+          <a
+            href="https://linkedin.com/in/rafaelreisaraujo"
+            target="_blank"
+            data-tooltip-id="linkedin"
+            data-tooltip-content="Linkedin"
+            data-tooltip-place="top"
+          >
             <img className="icons" src={linkedin} />
           </a>
-          <a href="https://wa.me/+5531991457040" target="_blank">
+          <Tooltip id="wpp" />
+          <a
+            href="https://wa.me/+5531991457040"
+            target="_blank"
+            data-tooltip-id="wpp"
+            data-tooltip-content="Whatsapp"
+            data-tooltip-place="top"
+          >
             <img className="icons" src={wpp} />
           </a>
         </div>

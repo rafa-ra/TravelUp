@@ -1,4 +1,5 @@
 import React from "react";
+import "react-tooltip/dist/react-tooltip.css";
 import { LanguageProvider } from "./context/LanguageContext";
 import { NavigationProvider } from "./context/NavigationContext";
 import { CountryProvider } from "./context/CountryContext";

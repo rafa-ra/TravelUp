@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./Header.scss";
+import { Tooltip } from "react-tooltip";
 
 import LanguageContext from "../../context/LanguageContext";
 
@@ -20,20 +21,32 @@ export const Header = () => {
         <img src={icons.feather} className="logo" />
       </div>
       <div className="languages">
+        <Tooltip id="ptBR" style={{ fontFamily: "Poppins" }} />
         <img
           onClick={() => handleClick("ptBR")}
           className="flag"
           src={brazil}
+          data-tooltip-id="ptBR"
+          data-tooltip-content="Português"
+          data-tooltip-place="bottom"
         ></img>
+        <Tooltip id="esES" style={{ fontFamily: "Poppins" }} />
         <img
           onClick={() => handleClick("esES")}
           className="flag"
           src={spain}
+          data-tooltip-id="esES"
+          data-tooltip-content="Español"
+          data-tooltip-place="bottom"
         ></img>
+        <Tooltip id="enUS" style={{ fontFamily: "Poppins" }} />
         <img
           onClick={() => handleClick("enUS")}
           className="flag"
           src={usa}
+          data-tooltip-id="enUS"
+          data-tooltip-content="English"
+          data-tooltip-place="bottom"
         ></img>
       </div>
     </header>

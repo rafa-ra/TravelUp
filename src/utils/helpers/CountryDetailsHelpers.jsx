@@ -1,14 +1,16 @@
 import axios from "axios";
-import react, { useContext } from "react";
+import react from "react";
 import CountryContext from "../../context/CountryContext";
 import { countries } from "../../assets/data";
 
-export const weatherReq = async (currentCountry, setWeather) => {
+export const weatherReq = async (currentCountry, language, setWeather) => {
   const city = countries.filter((e) => e.title === currentCountry)[0]
     .textContent.enUS.mainCities[0];
+  const languageArray = [...language];
+  const parsedLang = languageArray.splice(0, 2).join("");
 
   const weatherResults = await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=379a6d1f4ea4019dad587ca076cc6a99`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=${parsedLang}&appid=379a6d1f4ea4019dad587ca076cc6a99`
   );
 
   const { id } = weatherResults.data.weather[0];
@@ -41,5 +43,8 @@ export const weatherReq = async (currentCountry, setWeather) => {
     icon = "04d";
   }
 
-  return setWeather(icon);
+  return setWeather({
+    icon,
+    description: weatherResults.data.weather[0].description,
+  });
 };

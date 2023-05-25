@@ -480,8 +480,22 @@ export const countries = [
   {
     title: "australia",
     currency: ["AUD", "A$"],
-    cost: "expensive",
-    countryLanguages: [icons.english],
+    cost: {
+      cost: "expensive",
+      tooltipText: {
+        enUS: "Expensive",
+        ptBR: "Caro",
+        esES: "Costoso",
+      },
+    },
+    countryLanguages: {
+      icons: [icons.english],
+      tooltipText: {
+        enUS: "English",
+        ptBR: "Inglês",
+        esES: "Inglés",
+      },
+    },
     flag: countryFlags.australia,
     picture: countryPics.picaustralia,
     textContent: {
@@ -510,8 +524,22 @@ export const countries = [
   {
     title: "canada",
     currency: ["CAD", "C$"],
-    cost: "regular",
-    countryLanguages: [icons.english, icons.french],
+    cost: {
+      cost: "regular",
+      tooltipText: {
+        enUS: "Average",
+        ptBR: "Regular",
+        esES: "Regular",
+      },
+    },
+    countryLanguages: {
+      icons: [icons.english, icons.french],
+      tooltipText: {
+        enUS: "English, French",
+        ptBR: "Inglês, Francês",
+        esES: "Inglés, Francés",
+      },
+    },
     flag: countryFlags.canada,
     picture: countryPics.piccanada,
     textContent: {
@@ -540,8 +568,22 @@ export const countries = [
   {
     title: "ireland",
     currency: ["EUR", "\u20AC"],
-    cost: "regular",
-    countryLanguages: [icons.english],
+    cost: {
+      cost: "regular",
+      tooltipText: {
+        enUS: "Average",
+        ptBR: "Regular",
+        esES: "Regular",
+      },
+    },
+    countryLanguages: {
+      icons: [icons.english],
+      tooltipText: {
+        enUS: "English",
+        ptBR: "Inglês",
+        esES: "Inglés",
+      },
+    },
     flag: countryFlags.ireland,
     picture: countryPics.picireland,
     textContent: {
@@ -570,8 +612,22 @@ export const countries = [
   {
     title: "south-africa",
     currency: ["ZAR", "R"],
-    cost: "low-cost",
-    countryLanguages: [icons.english],
+    cost: {
+      cost: "low-cost",
+      tooltipText: {
+        enUS: "Low-cost",
+        ptBR: "Custo Baixo",
+        esES: "Poco costoso",
+      },
+    },
+    countryLanguages: {
+      icons: [icons.english],
+      tooltipText: {
+        enUS: "English",
+        ptBR: "Inglês",
+        esES: "Inglés",
+      },
+    },
     flag: countryFlags.southafrica,
     picture: countryPics.picsouthafrica,
     textContent: {
@@ -600,8 +656,22 @@ export const countries = [
   {
     title: "usa",
     currency: ["USD", "US$"],
-    cost: "regular",
-    countryLanguages: [icons.english],
+    cost: {
+      cost: "regular",
+      tooltipText: {
+        enUS: "Average",
+        ptBR: "Regular",
+        esES: "Regular",
+      },
+    },
+    countryLanguages: {
+      icons: [icons.english],
+      tooltipText: {
+        enUS: "English",
+        ptBR: "Inglês",
+        esES: "Inglés",
+      },
+    },
     flag: countryFlags.usa,
     picture: countryPics.picusa,
     textContent: {
