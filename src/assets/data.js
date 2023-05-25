@@ -173,17 +173,17 @@ export const menuContent = {
           body: {
             enUS: [
               "TravelUp is a web application aimed at users who want to learn more about destinations and travel proposals. The modular format would allow the expansion of the application to deliver a higher value proposition to users, who, at the completion of this project, would only have the 'Destinations/Countries' module and the home page.",
-              "The idea arose from the desire to develop an application that presented essential challenges in application programming using Javascript and React.JS. For this reason, the focus of this project was, among other essential elements of these technologies, the use of Hooks, Context API, internationalization, props, routing, and Javascript ES6 functions, deprioritizing other aspects such as a robust value proposition and responsiveness.",
+              "The idea arose from the desire to develop an application that presented essential challenges in application programming using Javascript and React.JS. For this reason, the focus of this project was, among other essential elements of these technologies, the use of Hooks, Context API, internationalization, props, routing, tooltip, and Javascript ES6 functions, deprioritizing other aspects such as a robust value proposition and responsiveness (developed for 15in monitors).",
               "Welcome to Travel Up!",
             ],
             ptBR: [
               "O TravelUp é uma aplicação web voltada para usuários que buscam conhecer mais a respeito de destinos e propostas de viagens. O formato modular permitiria a expansão da aplicação para entregar uma proposta de maior valor para os usuários, que na finalização deste projeto, contariam apenas com o módulo de “Destinos/Países” e a página inicial.",
-              "A ideia surgiu a partir da vontade de desenvolver uma aplicação que apresentasse desafios essenciais na programação de aplicações utilizando Javascript e React.JS. Por essa razão, o foco deste projeto foi, entre outros elementos essenciais destas tecnologias, a utilização de Hooks, Context API, internacionalização, props, roteamento e funções do Javascript ES6, despriorizando outros aspectos, como uma proposta robusta de valor e responsividade.",
+              'A ideia surgiu a partir da vontade de desenvolver uma aplicação que apresentasse desafios essenciais na programação de aplicações utilizando Javascript e React.JS. Por essa razão, o foco deste projeto foi, entre outros elementos essenciais destas tecnologias, a utilização de Hooks, Context API, internacionalização, props, roteamento, tooltip e funções do Javascript ES6, despriorizando outros aspectos, como uma proposta robusta de valor e responsividade (desenvolvido para monitores de 15").',
               "Bem-vindo ao Travel Up!",
             ],
             esES: [
               "TravelUp es una aplicación web dirigida a usuarios que buscan conocer más sobre destinos y propuestas de viaje. El formato modular permitiría expandir la aplicación para brindar una propuesta de mayor valor a los usuarios, quienes al finalizar este proyecto solo contarían con el módulo de 'Destinos/Países' y la página inicial.",
-              "La idea surgió de la voluntad de desarrollar una aplicación que presentara desafíos esenciales en la programación de aplicaciones utilizando Javascript y React.JS. Por esta razón, el enfoque de este proyecto fue, entre otros elementos esenciales de estas tecnologías, utilizar Hooks, Context API, internacionalización, props, enrutamiento y funciones de Javascript ES6, priorizando otros aspectos como una propuesta sólida de valor y capacidad de respuesta.",
+              'La idea surgió de la voluntad de desarrollar una aplicación que presentara desafíos esenciales en la programación de aplicaciones utilizando Javascript y React.JS. Por esta razón, el enfoque de este proyecto fue, entre otros elementos esenciales de estas tecnologías, utilizar Hooks, Context API, internacionalización, props, enrutamiento, tooltip y funciones de Javascript ES6, priorizando otros aspectos como una propuesta sólida de valor y capacidad de respuesta (desarrollo para monitores de 15").',
               "¡Bienvenido a Travel Up!",
             ],
           },
@@ -286,6 +286,28 @@ export const components = {
   homeList: {
     latestFeatures: [
       {
+        path: "/project",
+        enUS: {
+          title: '"This Project" Page',
+          briefDescription: "This Project Page",
+          date: "May/2023",
+          type: "Design",
+        },
+        ptBR: {
+          title: 'Página "Este Projeto"',
+          briefDescription: 'Página "Este Projeto"',
+          date: "Maio/2023",
+          type: "Design",
+        },
+        esES: {
+          title: 'Página "Este Projeto"',
+          briefDescription: 'Página "Este Proyecto"',
+          date: "Mayo/2023",
+          type: "Design",
+        },
+      },
+      {
+        path: "/",
         enUS: {
           title: "Info Container",
           briefDescription: "Explanatory section for each page",
@@ -326,27 +348,6 @@ export const components = {
           type: "Nueva página",
         },
       },
-      {
-        path: "/",
-        enUS: {
-          title: "Menu",
-          briefDescription: "Menu component",
-          date: "May/2023",
-          type: "Component, Design",
-        },
-        ptBR: {
-          title: "Menu",
-          briefDescription: "Componente de menu",
-          date: "Maio/2023",
-          type: "Componente, Design",
-        },
-        esES: {
-          title: "Menu",
-          briefDescription: "Componente de menu",
-          date: "Mayo/2023",
-          type: "Componente, Design",
-        },
-      },
     ],
 
     nextFeatures: [
@@ -372,23 +373,21 @@ export const components = {
       // },
 
       {
+        path: "/",
         enUS: {
-          title: '"This Project" Page',
+          title: "Project concluded",
           briefDescription: "This Project Page",
-          date: "June/2023",
-          type: "Design",
+          date: "5/25/2023",
         },
         ptBR: {
-          title: 'Página "Este Projeto"',
+          title: "Projeto concluído",
           briefDescription: 'Página "Este Projeto"',
-          date: "Junho/2023",
-          type: "Design",
+          date: "25/05/2023",
         },
         esES: {
-          title: 'Página "Este Projeto"',
+          title: "Proyecto terminado",
           briefDescription: 'Página "Este Proyecto"',
-          date: "Junio",
-          type: "Design",
+          date: "25/05/2023",
         },
       },
     ],
