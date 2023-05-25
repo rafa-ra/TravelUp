@@ -133,64 +133,88 @@ export const menuContent = {
     //   },
     //   path: "/support",
     // },
-    // {
-    //   aboutItem: true,
-    //   icon: icons.project,
-    //   title: {
-    //     enUS: "THIS PROJECT",
-    //     ptBR: "ESTE PROJETO",
-    //     esES: "ESTE PROYECTO",
-    //   },
-    //   path: "/project",
-    //   infoContainer: {
-    //     tech: {
-    //       code: ["javascript ES6", "react.js"],
-    //       design: ["CSS3", "CSS Flexbox", "SASS"],
-    //       others: ["HTML5"],
-    //     },
-    //     challenges: {
-    //       enUS: [
-    //         "Implementation of navigation and i18n Contexts",
-    //         "Definition of essential information and proper distribution within the layout",
-    //       ],
-    //       ptBR: [
-    //         "Implementação dos Contexts de navegação e i18n",
-    //         "Definição de informações essenciais e distribuição adequada dentro do layout",
-    //       ],
-    //       esES: [
-    //         "Implementación de los contextos de navegación e i18n",
-    //         "Definición de información esencial y distribución adecuada dentro del diseño",
-    //       ],
-    //     },
-    //   },
-    //   containerText: {
-    //     what: {
-    //       title: {
-    //         enUS: "What is this project?",
-    //         ptBR: "O que é este projeto?",
-    //         esES: "Qué es este proyecto?",
-    //       },
-    //       body: {
-    //         enUS: "TravelUp is a web application aimed at users who want to learn more about destinations and travel proposals. The modular format would allow the expansion of the application to deliver a higher value proposition to users, who, at the completion of this project, would only have the 'Destinations/Countries' module and the home page. The idea arose from the desire to develop an application that presented essential challenges in application programming using Javascript and React.JS. For this reason, the focus of this project was, among other essential elements of these technologies, the use of Hooks, Context API, internationalization, props, routing, and Javascript ES6 functions, deprioritizing other aspects such as a robust value proposition and responsiveness. Welcome to Travel Up!",
-    //         ptBR: "O TravelUp é uma aplicação web voltada para usuários que buscam conhecer mais a respeito de destinos e propostas de viagens. O formato modular permitiria a expansão da aplicação para entregar uma proposta de maior valor para os usuários, que na finalização deste projeto, contariam apenas com o módulo de “Destinos/Países” e a página inicial. A ideia surgiu a partir da vontade de desenvolver uma aplicação que apresentasse desafios essenciais na programação de aplicações utilizando Javascript e React.JS. Por essa razão, o foco deste projeto foi, entre outros elementos essenciais destas tecnologias, a utilização de Hooks, Context API, internacionalização, props, roteamento e funções do Javascript ES6, despriorizando outros aspectos, como uma proposta robusta de valor e responsividade. Bem-vindo ao Travel Up!",
-    //         esES: "TravelUp es una aplicación web dirigida a usuarios que buscan conocer más sobre destinos y propuestas de viaje. El formato modular permitiría expandir la aplicación para brindar una propuesta de mayor valor a los usuarios, quienes al finalizar este proyecto solo contarían con el módulo de 'Destinos/Países' y la página inicial. La idea surgió de la voluntad de desarrollar una aplicación que presentara desafíos esenciales en la programación de aplicaciones utilizando Javascript y React.JS. Por esta razón, el enfoque de este proyecto fue, entre otros elementos esenciales de estas tecnologías, utilizar Hooks, Context API, internacionalización, props, enrutamiento y funciones de Javascript ES6, priorizando otros aspectos como una propuesta sólida de valor y capacidad de respuesta. ¡Bienvenido a Travel Up!",
-    //       },
-    //     },
+    {
+      aboutItem: true,
+      icon: icons.project,
+      title: {
+        enUS: "THIS PROJECT",
+        ptBR: "ESTE PROJETO",
+        esES: "ESTE PROYECTO",
+      },
+      path: "/project",
+      infoContainer: {
+        tech: {
+          code: ["javascript ES6", "react.js"],
+          design: ["CSS3", "CSS Flexbox", "SASS"],
+          others: ["HTML5"],
+        },
+        challenges: {
+          enUS: [
+            "Implementation of navigation and i18n Contexts",
+            "Definition of essential information and proper distribution within the layout",
+          ],
+          ptBR: [
+            "Implementação dos Contexts de navegação e i18n",
+            "Definição de informações essenciais e distribuição adequada dentro do layout",
+          ],
+          esES: [
+            "Implementación de los contextos de navegación e i18n",
+            "Definición de información esencial y distribución adecuada dentro del diseño",
+          ],
+        },
+      },
+      containerText: {
+        what: {
+          title: {
+            enUS: "What is this project?",
+            ptBR: "O que é este projeto?",
+            esES: "Qué es este proyecto?",
+          },
+          body: {
+            enUS: [
+              "TravelUp is a web application aimed at users who want to learn more about destinations and travel proposals. The modular format would allow the expansion of the application to deliver a higher value proposition to users, who, at the completion of this project, would only have the 'Destinations/Countries' module and the home page.",
+              "The idea arose from the desire to develop an application that presented essential challenges in application programming using Javascript and React.JS. For this reason, the focus of this project was, among other essential elements of these technologies, the use of Hooks, Context API, internationalization, props, routing, and Javascript ES6 functions, deprioritizing other aspects such as a robust value proposition and responsiveness.",
+              "Welcome to Travel Up!",
+            ],
+            ptBR: [
+              "O TravelUp é uma aplicação web voltada para usuários que buscam conhecer mais a respeito de destinos e propostas de viagens. O formato modular permitiria a expansão da aplicação para entregar uma proposta de maior valor para os usuários, que na finalização deste projeto, contariam apenas com o módulo de “Destinos/Países” e a página inicial.",
+              "A ideia surgiu a partir da vontade de desenvolver uma aplicação que apresentasse desafios essenciais na programação de aplicações utilizando Javascript e React.JS. Por essa razão, o foco deste projeto foi, entre outros elementos essenciais destas tecnologias, a utilização de Hooks, Context API, internacionalização, props, roteamento e funções do Javascript ES6, despriorizando outros aspectos, como uma proposta robusta de valor e responsividade.",
+              "Bem-vindo ao Travel Up!",
+            ],
+            esES: [
+              "TravelUp es una aplicación web dirigida a usuarios que buscan conocer más sobre destinos y propuestas de viaje. El formato modular permitiría expandir la aplicación para brindar una propuesta de mayor valor a los usuarios, quienes al finalizar este proyecto solo contarían con el módulo de 'Destinos/Países' y la página inicial.",
+              "La idea surgió de la voluntad de desarrollar una aplicación que presentara desafíos esenciales en la programación de aplicaciones utilizando Javascript y React.JS. Por esta razón, el enfoque de este proyecto fue, entre otros elementos esenciales de estas tecnologías, utilizar Hooks, Context API, internacionalización, props, enrutamiento y funciones de Javascript ES6, priorizando otros aspectos como una propuesta sólida de valor y capacidad de respuesta.",
+              "¡Bienvenido a Travel Up!",
+            ],
+          },
+        },
 
-    //     process: {
-    //       title: {
-    //         enUS: "The process",
-    //         ptBR: "O processo",
-    //         esES: "El proceso",
-    //       },
-    //       body: {
-    //         enUS: "Once the value proposition was defined, I started the process of mapping the modules to be implemented and the respective elements and information to be included in the software. This information was then used to create the wireframes and subsequently break down the backlog. The generated tasks were recorded on a Trello board and grouped into features that could be completed in a sprint. My experience as a Project Manager was important for organizing tasks, releases, and defined deadlines. Finally, it was possible to complete the project ahead of schedule and host it to share with the community! If you find any bugs or opportunities for improvement, I would appreciate knowing more. My contact information is in the footer. Thank you!",
-    //         ptBR: "Uma vez definida a proposta de valor, iniciei o processo de mapeamento de módulos a serem implementados e os respectivos elementos e informações informações a serem contemplados no software. Essas informações foram então utilizadas para a criação dos wireframes e em seguida para a quebra do backlog. As tarefas geradas foram registradas em um board do Trello e agrupadas em features que pudessem ser concluídas em uma sprint. A minha experiência como Gerente de Projetos foi importante para a organização de tarefas, releases e prazos definidos. Por fim, foi possível finalizar o projeto com antecipação e hospedá-lo para compartilhar com a comunidade! Caso encontre Bugs ou oportunidades de melhoria, ficarei grato em saber. Meus contatos estão no rodapé. Obrigado!",
-    //         esES: "Una vez definida la propuesta de valor, comencé el proceso de mapeo de los módulos a implementar y los respectivos elementos e información que se incluirían en el software. Esta información se utilizó para crear los wireframes y luego dividir el backlog. Las tareas generadas se registraron en un tablero de Trello y se agruparon en características que pudieran completarse en una iteración. Mi experiencia como Gerente de Proyectos fue importante para organizar las tareas, lanzamientos y plazos establecidos. ¡Finalmente, fue posible terminar el proyecto antes de tiempo y alojarlo para compartirlo con la comunidad! Si encuentras errores o oportunidades de mejora, agradecería saber más al respecto. Mis datos de contacto están en el pie de página. ¡Gracias!",
-    //       },
-    //     },
-    //   },
-    // },
+        process: {
+          title: {
+            enUS: "The process",
+            ptBR: "O processo",
+            esES: "El proceso",
+          },
+          body: {
+            enUS: [
+              "Once the value proposition was defined, I started the process of mapping the modules to be implemented and the respective elements and information to be included in the software. This information was then used to create the wireframes and subsequently break down the backlog. The generated tasks were recorded on a Trello board and grouped into features that could be completed in a sprint.",
+              "My experience as a Project Manager was important for organizing tasks, releases, and defined deadlines. Finally, it was possible to complete the project ahead of schedule and host it to share with the community!",
+              "If you find any bugs or opportunities for improvement, I would appreciate knowing more. My contact information is in the footer. Thank you!",
+            ],
+            ptBR: [
+              "Uma vez definida a proposta de valor, iniciei o processo de mapeamento de módulos a serem implementados e os respectivos elementos e informações informações a serem contemplados no software. Essas informações foram então utilizadas para a criação dos wireframes e em seguida para a quebra do backlog. As tarefas geradas foram registradas em um board do Trello e agrupadas em features que pudessem ser concluídas em uma sprint.",
+              "A minha experiência como Gerente de Projetos foi importante para a organização de tarefas, releases e prazos definidos. Por fim, foi possível finalizar o projeto com antecipação e hospedá-lo para compartilhar com a comunidade!",
+              "Caso encontre Bugs ou oportunidades de melhoria, ficarei grato em saber. Meus contatos estão no rodapé. Obrigado!",
+            ],
+            esES: [
+              "Una vez definida la propuesta de valor, comencé el proceso de mapeo de los módulos a implementar y los respectivos elementos e información que se incluirían en el software. Esta información se utilizó para crear los wireframes y luego dividir el backlog. Las tareas generadas se registraron en un tablero de Trello y se agruparon en características que pudieran completarse en una iteración.",
+              "Mi experiencia como Gerente de Proyectos fue importante para organizar las tareas, lanzamientos y plazos establecidos. ¡Finalmente, fue posible terminar el proyecto antes de tiempo y alojarlo para compartirlo con la comunidad!",
+              "Si encuentras errores o oportunidades de mejora, agradecería saber más al respecto. Mis datos de contacto están en el pie de página. ¡Gracias!",
+            ],
+          },
+        },
+      },
+    },
     // {
     //   aboutItem: true,
     //   icon: icons.developer,

@@ -13,18 +13,20 @@ const ProjectContainer = () => {
 
   const pageInfo = menuContent.items.filter((e) => e.path === "/project")[0];
 
-  const whatText = "This is the first line. \n\r This is the second line.";
-
   return (
     <div className="project-container">
       <div className="about-project">
         <div className="about-text-content">
           <h2>{pageInfo.containerText.what.title[language]}</h2>
-          <p>{whatText}</p>
+          {pageInfo.containerText.what.body[language].map((e) => (
+            <p key={e}>{e}</p>
+          ))}
         </div>
         <div className="about-process">
           <h2>{pageInfo.containerText.process.title[language]}</h2>
-          <p></p>
+          {pageInfo.containerText.process.body[language].map((e) => (
+            <p key={e}>{e}</p>
+          ))}
         </div>
       </div>
       <hr></hr>
