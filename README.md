@@ -28,9 +28,6 @@ diferentes tecnologias e ferramentas comuns no desenvolvimento web.</p>
 </li>
 
 <li>CSS:
-
-
-
 <ul>
 <li>Grid</li>
 <li>Flexbox</li>
@@ -48,8 +45,9 @@ Outros:
     </ul>
 </li>
 </ul>
-
-
+<p> </p>
+<p> </p>
+<p> </p>
 <h4 align="center">Olá 👋, eu sou o Rafael</h4>
 <h5 align="center">Desenvolvo aplicações web, front e backend e minha filosofia é a aprendizagem contínua</h5>
 <br>
