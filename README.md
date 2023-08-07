@@ -45,12 +45,10 @@ Outros:
     </ul>
 </li>
 </ul>
-<p align="center">-</p>
-<p align="center">-</p>
-<p align="center">-</p>
-<h3 align="center">Olá 👋, eu sou o Rafael</h3>
-<h5 align="center">Desenvolvo aplicações web, front e backend e minha filosofia é a aprendizagem contínua</h5>
 <br>
+<br>
+<h3 align="center">Olá 👋, eu sou o Rafael</h3>
+<p align="center">Desenvolvo aplicações web, front e backend e minha filosofia é a aprendizagem contínua</p>
 <p align="center"> 📫 Como falar comigo <b>reis.rafael18@gmail.com</b></p>
 <br>
 <p align="center"> <a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="24" width="32" /></a>
