@@ -43,10 +43,6 @@ Outros:
     </ul>
 </li>
 </ul>
-<p align="left"> </p>
-<p align="left"> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> </p>
-<h4 align="left">Outros:</h4>
-<p align="left"> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>  </p>
 
 
 <h4 align="center">Olá 👋, eu sou o Rafael</h4>
@@ -54,9 +50,9 @@ Outros:
 <br>
 <p align="center"> 📫 Como falar comigo <b>reis.rafael18@gmail.com</b></p>
 <br>
-<h4 align="left">Se conecte:</h4>
+<p align="center">Se conecte:</p>
 <p align="left">
-<a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="15" width="20" /></a>
 </p>
 
 
