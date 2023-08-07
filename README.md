@@ -11,7 +11,7 @@ diferentes tecnologias e ferramentas comuns no desenvolvimento web.</p>
 <h4 align="left">Nesta aplicação você encontrará:</h4>
 <ul>
   <li>React:
-
+<ul>
 <li>JSX</li>
 <li>Virtual DOM</li>
 <li>useState</li>
@@ -24,15 +24,20 @@ diferentes tecnologias e ferramentas comuns no desenvolvimento web.</p>
 <li>Requisições a APIs externas</li>
 <li>Renderização condicional</li>
 <li>Javascript ES6</li>
+</ul>
 </li>
 
 <li>CSS:
 
+
+
+<ul>
 <li>Grid</li>
 <li>Flexbox</li>
 <li>Transitions</li>
 <li>SaSS variables</li>
 <li>Estilização geral sem bibliotecas externas</li>
+  </ul>
 </li>
 <li>
 Outros:
@@ -50,9 +55,7 @@ Outros:
 <br>
 <p align="center"> 📫 Como falar comigo <b>reis.rafael18@gmail.com</b></p>
 <br>
-<p align="center">Se conecte:</p>
-<p align="left">
-<a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="15" width="20" /></a>
+<p align="center">Se conecte: <a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="15" width="20" /></a>
 </p>
 
 
