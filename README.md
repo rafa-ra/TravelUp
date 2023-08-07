@@ -55,7 +55,7 @@ Outros:
 <br>
 <p align="center"> 📫 Como falar comigo <b>reis.rafael18@gmail.com</b></p>
 <br>
-<p align="center"> <a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="24" width="32" /></a> Se conecte
+<p align="center"> <a href="https://linkedin.com/in/rafaelreisaraujo" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rafael" height="24" width="32" /></a>
 </p>
 
 
